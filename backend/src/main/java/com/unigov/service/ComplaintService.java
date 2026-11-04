@@ -4,10 +4,12 @@ import com.unigov.dto.ComplaintDtos.*;
 import com.unigov.entity.Complaint;
 import com.unigov.entity.ComplaintEnums.ComplaintStatus;
 import com.unigov.entity.Notification.NotificationType;
+import com.unigov.entity.Role;
 import com.unigov.entity.User;
 import com.unigov.repository.ComplaintRepository;
 import com.unigov.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -74,6 +76,12 @@ public class ComplaintService {
                 .orElseThrow(() -> new RuntimeException("Utilisateur non trouvé"));
         Complaint complaint = complaintRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Réclamation non trouvée"));
+        boolean autorise = complaint.isPublic()
+                || user.getId().equals(complaint.getStudentId())
+                || user.getRole() == Role.ROLE_DELEGUE;
+        if (!autorise) {
+            throw new AccessDeniedException("Réclamation privée");
+        }
         return mapToResponse(complaint, user.getId());
     }
 
