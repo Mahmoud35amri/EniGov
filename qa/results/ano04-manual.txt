@@ -1,0 +1,18 @@
+$ # TA-07 Etape 1 : le delegue cree un evenement "Reunion TEST-ANO04"
+$ curl -X POST http://localhost:8081/api/events -H "Authorization: Bearer <jeton delegue>" -d {"title":"Reunion TEST-ANO04","date":"2026-12-10T10:00:00","location":"Amphi A",...}
+{"id":"6fa1f6a8-d89b-4b86-bdc4-fdf843b6bc88","title":"Reunion TEST-ANO04","date":"2026-12-10T10:00:00","location":"Amphi A","type":"ACADEMIC"}  -> HTTP 200
+
+$ # Etape 2 : verification avant redemarrage
+$ curl -s http://localhost:8081/api/events | grep -c "TEST-ANO04"   =>  1
+$ nombre total d evenements  =>  12
+
+$ # Etape 3 : redemarrage du backend (mvn spring-boot:run)
+INFO 30008 --- [enigov] [  restartedMain] com.unigov.UniGovApplication             : Started UniGovApplication in 5.441 seconds (process run
+>>> SEEDER : Calendrier mis a jour avec les periodes (Debut/Fin).  [eventRepository.deleteAll() + seedEvents()]
+
+$ # Etape 4 : verification apres redemarrage
+$ curl -s http://localhost:8081/api/events | grep -c "TEST-ANO04"   =>  0
+$ nombre total d evenements  =>  11
+
+RESULTAT : ECHEC - l evenement cree par le delegue a ete supprime au redemarrage (ANO-04).
+Cause (revue de code) : DatabaseSeeder.run() appelle eventRepository.deleteAll() a chaque demarrage.

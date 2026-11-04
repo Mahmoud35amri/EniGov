@@ -1,0 +1,48 @@
+npm notice run npx
+npm notice run playwright test -c e2e/playwright.config.js
+
+Running 7 tests using 1 worker
+
+  ok 1 [chromium-desktop] › e2e\specs\enigov.spec.js:23:1 › TS-01 Connexion du délégué et affichage du tableau de bord (1.5s)
+  ok 2 [chromium-desktop] › e2e\specs\enigov.spec.js:31:1 › TS-02 Connexion refusée avec un mauvais mot de passe (1.4s)
+  ok 3 [chromium-desktop] › e2e\specs\enigov.spec.js:38:1 › TS-03 Le délégué publie une annonce, visible par un étudiant (3.1s)
+  ok 4 [chromium-desktop] › e2e\specs\enigov.spec.js:58:1 › TS-04 Parcours réclamation : création par l’étudiant, traitement par le délégué (4.6s)
+  ok 5 [chromium-desktop] › e2e\specs\enigov.spec.js:90:1 › TS-05 Sondage : création par le délégué et vote d’un étudiant (2.9s)
+  ok 6 [chromium-desktop] › e2e\specs\enigov.spec.js:110:1 › TS-06 Contrôle d’accès : un étudiant ne peut pas ouvrir la page Étudiants (1.5s)
+  x  7 [chromium-mobile] › e2e\specs\enigov.spec.js:119:1 › TS-07 @mobile Affichage responsive sur smartphone (Pixel 7) (3.4s)
+
+
+  1) [chromium-mobile] › e2e\specs\enigov.spec.js:119:1 › TS-07 @mobile Affichage responsive sur smartphone (Pixel 7) 
+
+    Error: aucun défilement horizontal (largeur en trop, px)
+
+    expect(received).toBeLessThanOrEqual(expected)
+
+    Expected: <= 0
+    Received:    107
+
+      126 |   await shot(page, 'e2e-ts07-mobile-accueil');
+      127 |   const debordement = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+    > 128 |   expect(debordement, 'aucun défilement horizontal (largeur en trop, px)').toBeLessThanOrEqual(0);
+          |                                                                            ^
+      129 | });
+      130 |
+        at C:\Users\ASUS\Desktop\EniGov\qa\e2e\specs\enigov.spec.js:128:76
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\enigov-TS-07-mobile-Affich-f4508-ive-sur-smartphone-Pixel-7--chromium-mobile\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\enigov-TS-07-mobile-Affich-f4508-ive-sur-smartphone-Pixel-7--chromium-mobile\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\enigov-TS-07-mobile-Affich-f4508-ive-sur-smartphone-Pixel-7--chromium-mobile\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\enigov-TS-07-mobile-Affich-f4508-ive-sur-smartphone-Pixel-7--chromium-mobile\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [chromium-mobile] › e2e\specs\enigov.spec.js:119:1 › TS-07 @mobile Affichage responsive sur smartphone (Pixel 7) 
+  6 passed (19.9s)

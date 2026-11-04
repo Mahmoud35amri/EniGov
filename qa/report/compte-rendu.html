@@ -1,0 +1,460 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Compte rendu – Ateliers de test – EniGov</title>
+<style>
+  @page { size: A4; margin: 18mm 16mm 18mm 16mm; }
+  * { box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Calibri, Arial, sans-serif; font-size: 10.5pt; line-height: 1.5; color: #1e293b; margin: 0; }
+  h1 { font-size: 19pt; color: #312e81; border-bottom: 3px solid #6366f1; padding-bottom: 4px; margin: 0 0 14px; page-break-before: always; }
+  h2 { font-size: 13.5pt; color: #3730a3; margin: 20px 0 8px; page-break-after: avoid; }
+  h3 { font-size: 11.5pt; color: #4338ca; margin: 14px 0 6px; page-break-after: avoid; }
+  p { margin: 6px 0; text-align: justify; }
+  ul, ol { margin: 4px 0 8px; padding-left: 22px; } li { margin: 2px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0 12px; font-size: 9.2pt; page-break-inside: auto; }
+  tr { page-break-inside: avoid; }
+  th { background: #312e81; color: #fff; text-align: left; padding: 5px 6px; font-weight: 600; }
+  td { border-bottom: 1px solid #e2e8f0; padding: 4px 6px; vertical-align: top; }
+  tbody tr:nth-child(even) td { background: #f8fafc; }
+  table.small { font-size: 8.6pt; }
+  td b:first-child { white-space: nowrap; }
+  figure { margin: 10px auto 14px; text-align: center; page-break-inside: avoid; }
+  figure img { max-width: 100%; border: 1px solid #cbd5e1; border-radius: 4px; }
+  figcaption { font-size: 8.8pt; color: #475569; font-style: italic; margin-top: 4px; }
+  code { font-family: Consolas, monospace; font-size: 8.8pt; background: #f1f5f9; padding: 0 3px; border-radius: 3px; }
+  pre { font-family: Consolas, monospace; font-size: 8.4pt; background: #0f172a; color: #e2e8f0; padding: 10px 12px; border-radius: 6px; white-space: pre-wrap; page-break-inside: avoid; line-height: 1.4; }
+  .badge { display: inline-block; padding: 0 7px; border-radius: 9px; font-size: 8pt; font-weight: 700; white-space: nowrap; }
+  .ok { background: #dcfce7; color: #166534; } .ko { background: #fee2e2; color: #991b1b; } .warn { background: #fef3c7; color: #92400e; }
+  .note { background: #eef2ff; border-left: 4px solid #6366f1; padding: 8px 12px; margin: 10px 0; border-radius: 0 6px 6px 0; }
+  .alerte { background: #fef2f2; border-left: 4px solid #dc2626; padding: 8px 12px; margin: 10px 0; border-radius: 0 6px 6px 0; }
+  .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 10px 0 14px; }
+  .kpi { border: 1px solid #c7d2fe; border-radius: 8px; padding: 8px; text-align: center; background: #f8fafc; }
+  .kpi b { display: block; font-size: 18pt; color: #312e81; } .kpi span { font-size: 8.5pt; color: #475569; }
+  .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; } .duo figure { margin: 6px 0; }
+  .garde { height: 255mm; display: flex; flex-direction: column; justify-content: space-between; text-align: center; padding: 10mm 0; }
+  .garde h1 { page-break-before: avoid; border: none; font-size: 28pt; color: #312e81; margin: 0; }
+  .garde .ecole { font-size: 13pt; font-weight: 600; color: #334155; letter-spacing: .5px; }
+  .garde .sous { font-size: 15pt; color: #4338ca; margin-top: 8px; }
+  .garde .cadre { border: 2px solid #6366f1; border-radius: 12px; padding: 18px; margin: 0 25mm; }
+  .garde table { width: 70%; margin: 0 auto; font-size: 11pt; } .garde td { border: none; padding: 4px; background: none !important; }
+  .toc a { color: #1e293b; text-decoration: none; } .toc li { margin: 3px 0; }
+  .first { page-break-before: avoid; }
+</style></head><body>
+
+<!-- ======================= PAGE DE GARDE ======================= -->
+<section class="garde">
+  <div><div class="ecole">ÉCOLE NATIONALE D’INGÉNIEURS DE CARTHAGE<br>ENICarthage — Université de Carthage</div></div>
+  <div class="cadre">
+    <div style="font-size:12pt;color:#64748b;letter-spacing:2px">COMPTE RENDU</div>
+    <h1>Ateliers de test logiciel</h1>
+    <div class="sous">Recette de la plateforme <b>EniGov</b><br>Plateforme numérique du délégué étudiant</div>
+  </div>
+  <table>
+    <tr><td style="text-align:right;color:#64748b">Réalisé par :</td><td style="text-align:left"><b>Mahmoud Amri</b></td></tr>
+    <tr><td style="text-align:right;color:#64748b">Encadrement :</td><td style="text-align:left"><b>Faouzi Jaidi</b></td></tr>
+    <tr><td style="text-align:right;color:#64748b">Outil de gestion des tests :</td><td style="text-align:left">Squash TM 15.0.3</td></tr>
+    <tr><td style="text-align:right;color:#64748b">Date :</td><td style="text-align:left">4 novembre 2026</td></tr>
+  </table>
+  <div style="color:#64748b">Année universitaire 2026 – 2027</div>
+</section>
+
+<!-- ======================= SOMMAIRE ======================= -->
+<h1>Sommaire</h1>
+<ol class="toc">
+  <li>Introduction et objectifs des ateliers</li>
+  <li>Choix du projet : EniGov (objectif 1)</li>
+  <li>Installation de l’environnement de test</li>
+  <li>Besoins fonctionnels et non fonctionnels (objectif 2)</li>
+  <li>Outil de gestion des tests et des exigences : Squash TM (objectif 3)</li>
+  <li>Plan de test (objectif 4)</li>
+  <li>Exécution du plan de test (objectif 5)
+    <ol><li>Tests statiques</li><li>Tests unitaires</li><li>Tests d’intégration</li><li>Tests structurels (couverture)</li><li>Tests système (E2E)</li><li>Tests d’acceptation manuels</li><li>Tests non fonctionnels</li><li>Tests liés aux changements et de maintenance</li><li>Suivi de la campagne dans Squash TM</li></ol></li>
+  <li>Bilan : anomalies, métriques et verdict de recette</li>
+  <li>Conclusion</li>
+  <li>Annexe : rejouer les tests</li>
+</ol>
+
+<!-- ======================= 1. INTRODUCTION ======================= -->
+<h1>1. Introduction et objectifs des ateliers</h1>
+<p>Ce compte rendu présente le travail réalisé dans le cadre des ateliers de test logiciel. Il suit les cinq objectifs fixés :</p>
+<table class=""><thead><tr><th>Objectif</th><th>Travail réalisé</th><th>Chapitre</th></tr></thead><tbody><tr><td>1. Choisir un projet</td><td>Plateforme web EniGov (Spring Boot + React + PostgreSQL), clonée et lancée en local</td><td>2, 3</td></tr><tr><td>2. Présenter les besoins fonctionnels et non fonctionnels</td><td>18 exigences fonctionnelles et 9 non fonctionnelles, avec criticité</td><td>4</td></tr><tr><td>3. Utiliser un outil de gestion de test (et des exigences)</td><td>Squash TM 15.0.3 installé sous Docker : exigences, cas de test, traçabilité, campagne</td><td>5</td></tr><tr><td>4. Élaborer un plan de test</td><td>Plan couvrant 4 niveaux (unitaire, intégration, système, acceptation) et 5 types (fonctionnel, non fonctionnel, structurel, lié aux changements, maintenance)</td><td>6</td></tr><tr><td>5. Exécuter le plan de test</td><td>Techniques statiques et dynamiques, tests manuels et automatisés ; 8 anomalies détectées dont 1 critique corrigée et re-testée</td><td>7, 8</td></tr></tbody></table>
+<div class="kpis">
+  <div class="kpi"><b>27</b><span>exigences</span></div>
+  <div class="kpi"><b>33</b><span>cas de test dans Squash TM</span></div>
+  <div class="kpi"><b>52 + 7 + 14</b><span>tests JUnit · E2E · étapes manuelles</span></div>
+  <div class="kpi"><b>8</b><span>anomalies détectées</span></div>
+</div>
+
+<!-- ======================= 2. PROJET ======================= -->
+<h1>2. Choix du projet : EniGov (objectif 1)</h1>
+<h2>2.1 Présentation</h2>
+<p><b>EniGov</b> est la plateforme numérique de gouvernance étudiante de l’ENICarthage (dépôt : <code>github.com/Mahmoud35amri/EniGov</code>). Le délégué élu y publie des annonces, gère les réclamations des étudiants, organise des sondages, publie des décisions et des événements, partage des documents et échange par messagerie. Les étudiants, inscrits avec une adresse <code>@enicar.ucar.tn</code>, consultent ces informations, déposent des réclamations (privées ou publiques), votent et écrivent au délégué.</p>
+<h2>2.2 Pourquoi ce projet ?</h2>
+<ul>
+  <li><b>Application réelle et complète</b> : backend Java, frontend React, base de données, authentification ; tous les niveaux de test s’y appliquent.</li>
+  <li><b>Deux rôles</b> (DÉLÉGUÉ, ÉTUDIANT) avec des règles d’accès : terrain idéal pour les tests de sécurité et d’autorisation.</li>
+  <li><b>Règles métier testables</b> : vote unique, ciblage des sondages, verrouillage après 5 échecs, politique de mot de passe (valeurs limites, tables de décision).</li>
+  <li><b>Données sensibles</b> : réclamations privées, d’où des exigences de confidentialité à vérifier.</li>
+</ul>
+<h2>2.3 Architecture technique</h2>
+<table class=""><thead><tr><th>Couche</th><th>Technologies</th></tr></thead><tbody><tr><td>Frontend</td><td>React 18, Vite 5, React Router 6, Tailwind CSS, Axios, Framer Motion</td></tr><tr><td>Backend</td><td>Java 17 (exécuté sur JDK 25), Spring Boot 3.2.2, Spring Security + JWT (jjwt 0.11.5), Spring Data JPA / Hibernate</td></tr><tr><td>Base de données</td><td>PostgreSQL (schéma généré par Hibernate : <code>ddl-auto=update</code>)</td></tr><tr><td>Services externes</td><td>Cloudinary (fichiers), Brevo (e-mails) — non configurés en local</td></tr></tbody></table>
+<figure style="width:78%"><img src="../results/screens/e2e-ts01-dashboard-delegue.png"><figcaption>Figure 1 – Tableau de bord du délégué (application lancée en local)</figcaption></figure>
+
+<!-- ======================= 3. INSTALLATION ======================= -->
+<h1>3. Installation de l’environnement de test</h1>
+<h2>3.1 Outils installés</h2>
+<table class=""><thead><tr><th>Outil</th><th>Version</th><th>Rôle</th><th>Installation</th></tr></thead><tbody><tr><td>Git</td><td>—</td><td>Clonage du dépôt</td><td><code>git clone https://github.com/Mahmoud35amri/EniGov.git</code></td></tr><tr><td>JDK / Maven</td><td>JDK 25 · Maven 3.9.12</td><td>Build et tests backend</td><td>déjà présents</td></tr><tr><td>Node.js / npm</td><td>22.23 · 12.2</td><td>Build frontend, Playwright</td><td>déjà présents ; <code>npm install</code></td></tr><tr><td>Docker Desktop</td><td>29.1</td><td>Conteneurs PostgreSQL, Squash TM, k6</td><td>déjà présent</td></tr><tr><td>PostgreSQL</td><td>16 (conteneur)</td><td>Base de l’application, base de test, base de Squash</td><td><code>docker run postgres:16 -p 5433:5432</code></td></tr><tr><td><b>Squash TM</b></td><td><b>15.0.3</b></td><td><b>Gestion des exigences et des tests</b></td><td><code>docker run squashtest/squash -p 8090:8080</code></td></tr><tr><td>JUnit 5, Mockito, MockMvc</td><td>Spring Boot Test 3.2</td><td>Tests unitaires et d’intégration</td><td>déjà dans le <code>pom.xml</code></td></tr><tr><td>JaCoCo</td><td>0.8.14</td><td>Couverture de code (tests structurels)</td><td>plugin ajouté au <code>pom.xml</code></td></tr><tr><td>PMD / CPD</td><td>7.17</td><td>Analyse statique Java, détection de duplications</td><td><code>mvn pmd:pmd pmd:cpd</code></td></tr><tr><td>ESLint</td><td>8 + plugins React</td><td>Analyse statique JavaScript</td><td><code>npm i -D eslint@8 …</code> + <code>.eslintrc.cjs</code></td></tr><tr><td>Playwright</td><td>1.x + Chromium</td><td>Tests système E2E, aide à l’exécution des tests manuels</td><td><code>npm i -D @playwright/test</code></td></tr><tr><td>k6</td><td>grafana/k6 (Docker)</td><td>Test de charge</td><td><code>docker run grafana/k6</code></td></tr></tbody></table>
+<figure style="width:100%"><img src="../results/screens/term-env.png"><figcaption>Figure 2 – Versions des outils et conteneurs en cours d’exécution</figcaption></figure>
+<figure>
+<svg viewBox="0 0 780 335" width="100%" font-family="Segoe UI, Arial, sans-serif" role="img" aria-label="Environnement de test">
+  <defs><marker id="fl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+  <text x="95" y="18" text-anchor="middle" font-size="11" font-weight="700" fill="#6366f1">OUTILS DE TEST</text>
+  <text x="390" y="18" text-anchor="middle" font-size="11" font-weight="700" fill="#6366f1">SYSTÈME SOUS TEST</text>
+  <rect x="545" y="26" width="225" height="295" rx="10" fill="#f0f9ff" stroke="#0284c7" stroke-dasharray="6 4"/>
+  <text x="657" y="44" text-anchor="middle" font-size="11" font-weight="700" fill="#0284c7">DOCKER DESKTOP</text>
+  
+  <rect x="10" y="32" width="170" height="46" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.4"/>
+  <text x="95" y="52" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1e293b">Playwright 1.x</text>
+  <text x="95" y="68" text-anchor="middle" font-size="10.5" fill="#475569">E2E + acceptance (Chromium)</text>
+  
+  <rect x="10" y="100" width="170" height="46" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.4"/>
+  <text x="95" y="120" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1e293b">JUnit 5 · Mockito · MockMvc</text>
+  <text x="95" y="136" text-anchor="middle" font-size="10.5" fill="#475569">unitaires + intégration</text>
+  
+  <rect x="10" y="168" width="170" height="46" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.4"/>
+  <text x="95" y="188" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1e293b">PMD · CPD · ESLint</text>
+  <text x="95" y="204" text-anchor="middle" font-size="10.5" fill="#475569">npm audit · JaCoCo</text>
+  
+  <rect x="10" y="236" width="170" height="46" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.4"/>
+  <text x="95" y="256" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1e293b">seed.mjs (Node)</text>
+  <text x="95" y="272" text-anchor="middle" font-size="10.5" fill="#475569">alimente Squash TM</text>
+  
+  <rect x="300" y="40" width="180" height="50" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.4"/>
+  <text x="390" y="62" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1e293b">Frontend React 18 / Vite</text>
+  <text x="390" y="78" text-anchor="middle" font-size="10.5" fill="#475569">http://localhost:5173</text>
+  
+  <rect x="300" y="150" width="180" height="50" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.4"/>
+  <text x="390" y="172" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1e293b">Backend Spring Boot 3.2</text>
+  <text x="390" y="188" text-anchor="middle" font-size="10.5" fill="#475569">http://localhost:8081/api</text>
+  
+  <rect x="560" y="56" width="195" height="50" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.4"/>
+  <text x="657.5" y="78" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1e293b">Squash TM 15.0.3</text>
+  <text x="657.5" y="94" text-anchor="middle" font-size="10.5" fill="#475569">http://localhost:8090/squash</text>
+  
+  <rect x="560" y="150" width="195" height="62" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.4"/>
+  <text x="657.5" y="178" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1e293b">PostgreSQL 16</text>
+  <text x="657.5" y="194" text-anchor="middle" font-size="10.5" fill="#475569">bases : enigov · enigov_test · squashtm</text>
+  
+  <rect x="560" y="240" width="195" height="46" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.4"/>
+  <text x="657.5" y="260" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1e293b">k6 (grafana/k6)</text>
+  <text x="657.5" y="276" text-anchor="middle" font-size="10.5" fill="#475569">test de charge 20 VU</text>
+  
+  <line x1="180" y1="55" x2="298" y2="62" stroke="#64748b" stroke-width="1.4" marker-end="url(#fl)" />
+  <text x="239" y="53.5" text-anchor="middle" font-size="10" fill="#475569">pilote le navigateur</text>
+  
+  <line x1="390" y1="90" x2="390" y2="148" stroke="#64748b" stroke-width="1.4" marker-end="url(#fl)" />
+  <text x="390" y="114" text-anchor="middle" font-size="10" fill="#475569">REST + JWT</text>
+  
+  <line x1="180" y1="123" x2="298" y2="170" stroke="#64748b" stroke-width="1.4" marker-end="url(#fl)" />
+  <text x="239" y="141.5" text-anchor="middle" font-size="10" fill="#475569">contexte Spring</text>
+  
+  <line x1="480" y1="178" x2="558" y2="180" stroke="#64748b" stroke-width="1.4" marker-end="url(#fl)" />
+  <text x="519" y="174" text-anchor="middle" font-size="10" fill="#475569">JPA</text>
+  
+  <line x1="657" y1="106" x2="657" y2="148" stroke="#64748b" stroke-width="1.4" marker-end="url(#fl)" />
+  <text x="657" y="122" text-anchor="middle" font-size="10" fill="#475569">JDBC</text>
+  <path d="M180 259 H250 V312 H528 V81 H556" fill="none" stroke="#64748b" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#fl)"/>
+  <text x="390" y="306" text-anchor="middle" font-size="10" fill="#475569">API REST (alimentation du référentiel)</text>
+  
+  <line x1="558" y1="262" x2="482" y2="192" stroke="#64748b" stroke-width="1.4" marker-end="url(#fl)" />
+  <text x="520" y="222" text-anchor="middle" font-size="10" fill="#475569">HTTP</text>
+  
+  <line x1="180" y1="191" x2="298" y2="196" stroke="#64748b" stroke-width="1.4" marker-end="url(#fl)" stroke-dasharray="5 4"/>
+  <text x="239" y="188.5" text-anchor="middle" font-size="10" fill="#475569">analyse le code</text>
+</svg><figcaption>Figure 3 – Architecture de l’environnement de test</figcaption></figure>
+<h2>3.2 Problèmes rencontrés et solutions</h2>
+<table class=""><thead><tr><th>Problème</th><th>Solution</th></tr></thead><tbody><tr><td>Le PostgreSQL local (port 5432) n’utilise pas le mot de passe attendu par le projet</td><td>PostgreSQL 16 dédié dans Docker, exposé sur le port 5433</td></tr><tr><td>Le backend refuse de démarrer : variables <code>CLOUDINARY_*</code> obligatoires mais absentes de la documentation</td><td>Valeurs factices dans <code>backend/.env</code> (anomalie de documentation <b>ANO-08</b>)</td></tr><tr><td>Le port 8080 est occupé par un service Oracle (TNSLSNR)</td><td>Squash TM exposé sur le port 8090</td></tr><tr><td>Squash TM 15 ne démarre pas sans base externe (H2 n’est plus embarquée)</td><td>Base <code>squashtm</code> créée dans le conteneur PostgreSQL ; variables <code>SQTM_DB_*</code></td></tr><tr><td>L’API REST de Squash refuse l’authentification Basic par défaut</td><td>Propriété <code>squash.rest-api.disallow-basic-authentication=false</code> (variable d’environnement)</td></tr><tr><td>Mockito / Byte Buddy ne supporte pas officiellement le JDK 25</td><td>Option <code>-Dnet.bytebuddy.experimental=true</code> dans le <code>pom.xml</code> (voir test de maintenance TM-01)</td></tr></tbody></table>
+
+<!-- ======================= 4. BESOINS ======================= -->
+<h1>4. Besoins fonctionnels et non fonctionnels (objectif 2)</h1>
+<p>Les besoins ont été extraits de la documentation du projet (README) et vérifiés par la lecture du code. Chaque exigence porte une référence unique, reprise dans Squash TM pour assurer la traçabilité vers les cas de test. La criticité oriente l’effort de test (approche basée sur les risques).</p>
+<h2>4.1 Acteurs</h2>
+<table class=""><thead><tr><th>Acteur</th><th>Description</th></tr></thead><tbody><tr><td>Délégué</td><td>Compte unique pré-créé ; administre la plateforme (publication, traitement des réclamations, statistiques).</td></tr><tr><td>Étudiant</td><td>Inscrit avec un e-mail @enicar.ucar.tn vérifié ; consulte, dépose des réclamations, vote, écrit au délégué.</td></tr></tbody></table>
+<h2>4.2 Exigences fonctionnelles</h2>
+<table class="small"><thead><tr><th>Réf.</th><th>Exigence</th><th>Description</th><th>Catégorie</th><th>Criticité</th></tr></thead><tbody><tr><td><b>EF-01</b></td><td>Inscription des étudiants</td><td>Un étudiant s'inscrit avec un e-mail @enicar.ucar.tn unique, son nom, sa filière et sa promotion. Le mot de passe contient 8 à 40 caractères, dont au moins une majuscule et un chiffre.</td><td>Fonctionnelle</td><td>Critique</td></tr><tr><td><b>EF-02</b></td><td>Vérification de l'adresse e-mail</td><td>Un compte n'est utilisable qu'après le clic sur le lien de vérification reçu par e-mail ; avant cela, la connexion est refusée.</td><td>Fonctionnelle</td><td>Majeure</td></tr><tr><td><b>EF-03</b></td><td>Connexion sécurisée et verrouillage du compte</td><td>Connexion par e-mail et mot de passe délivrant un jeton JWT. Après 5 échecs consécutifs, le compte est verrouillé pendant 15 minutes.</td><td>Sécurité</td><td>Critique</td></tr><tr><td><b>EF-04</b></td><td>Mot de passe oublié</td><td>Réinitialisation du mot de passe via un lien envoyé par e-mail, valable 15 minutes.</td><td>Fonctionnelle</td><td>Mineure</td></tr><tr><td><b>EF-05</b></td><td>Dépôt de réclamations</td><td>L'étudiant dépose une réclamation (titre, description, pièce jointe optionnelle), privée ou publique. Le statut initial est « En attente ».</td><td>Fonctionnelle</td><td>Critique</td></tr><tr><td><b>EF-06</b></td><td>Confidentialité des réclamations privées</td><td>Une réclamation privée n'est visible que par l'étudiant qui l'a créée et par le délégué.</td><td>Sécurité</td><td>Critique</td></tr><tr><td><b>EF-07</b></td><td>Vote sur les réclamations publiques</td><td>Les étudiants votent pour ou contre une réclamation publique (bascule, un seul vote par étudiant). Score = pour − contre. Vote impossible sur une réclamation privée.</td><td>Fonctionnelle</td><td>Majeure</td></tr><tr><td><b>EF-08</b></td><td>Traitement des réclamations par le délégué</td><td>Le délégué change le statut (En cours, Résolue, Rejetée) et répond ; l'étudiant concerné est notifié.</td><td>Fonctionnelle</td><td>Critique</td></tr><tr><td><b>EF-09</b></td><td>Publication des annonces</td><td>Le délégué publie des annonces (titre, contenu, pièce jointe) ; les étudiants les consultent en lecture seule.</td><td>Fonctionnelle</td><td>Majeure</td></tr><tr><td><b>EF-10</b></td><td>Création et ciblage des sondages</td><td>Le délégué crée un sondage (au moins 2 options, date limite optionnelle, ciblage par filière et promotion) et peut le clôturer.</td><td>Fonctionnelle</td><td>Majeure</td></tr><tr><td><b>EF-11</b></td><td>Vote aux sondages</td><td>Un étudiant vote une seule fois, sans modification possible, tant que le sondage est ouvert et avant la date limite. Les résultats s'affichent en pourcentages.</td><td>Fonctionnelle</td><td>Critique</td></tr><tr><td><b>EF-12</b></td><td>Décisions</td><td>Le délégué publie des décisions liées à une réclamation ou à un sondage.</td><td>Fonctionnelle</td><td>Mineure</td></tr><tr><td><b>EF-13</b></td><td>Messagerie étudiant ↔ délégué</td><td>Un étudiant ne peut écrire qu'au délégué ; le délégué peut écrire à tout étudiant. Statut lu / non lu.</td><td>Fonctionnelle</td><td>Majeure</td></tr><tr><td><b>EF-14</b></td><td>Calendrier des événements</td><td>Le délégué crée et supprime des événements ; les étudiants consultent le calendrier.</td><td>Fonctionnelle</td><td>Mineure</td></tr><tr><td><b>EF-15</b></td><td>Règlements et documents</td><td>Le délégué dépose des PDF ; les étudiants les consultent et les téléchargent.</td><td>Fonctionnelle</td><td>Mineure</td></tr><tr><td><b>EF-16</b></td><td>Notifications in-app</td><td>Cloche avec compteur de notifications non lues, déclenchées par : annonce, changement de statut de réclamation, sondage, décision, message, événement.</td><td>Fonctionnelle</td><td>Majeure</td></tr><tr><td><b>EF-17</b></td><td>Tableau de bord du délégué</td><td>Statistiques agrégées (étudiants, réclamations par statut, sondages, annonces…) réservées au délégué.</td><td>Fonctionnelle</td><td>Mineure</td></tr><tr><td><b>EF-18</b></td><td>Rôles et contrôle d’accès</td><td>Deux rôles : DÉLÉGUÉ et ÉTUDIANT. Les fonctions de gestion (publication, traitement, statistiques, liste des étudiants) sont réservées au délégué.</td><td>Sécurité</td><td>Critique</td></tr></tbody></table>
+<h2>4.3 Exigences non fonctionnelles</h2>
+<table class="small"><thead><tr><th>Réf.</th><th>Exigence</th><th>Description</th><th>Catégorie</th><th>Criticité</th></tr></thead><tbody><tr><td><b>ENF-01</b></td><td>Sécurité des identifiants et des jetons</td><td>Mots de passe hachés avec BCrypt ; API sans état authentifiée par JWT signé (HS256). Un jeton falsifié ou expiré est rejeté.</td><td>Sécurité</td><td>Critique</td></tr><tr><td><b>ENF-02</b></td><td>Protection de l'API</td><td>Toute requête non authentifiée ou non autorisée est refusée (HTTP 401/403), sans erreur serveur (500).</td><td>Sécurité</td><td>Critique</td></tr><tr><td><b>ENF-03</b></td><td>Performance</td><td>95 % des requêtes de consultation répondent en moins de 500 ms avec 20 utilisateurs simultanés.</td><td>Performance</td><td>Majeure</td></tr><tr><td><b>ENF-04</b></td><td>Fiabilité sous charge</td><td>Taux d'erreur inférieur à 1 % sous la charge nominale (20 utilisateurs).</td><td>Performance</td><td>Majeure</td></tr><tr><td><b>ENF-05</b></td><td>Ergonomie et affichage responsive</td><td>Interface utilisable sur smartphone (largeur ≥ 360 px) sans défilement horizontal ; thème clair/sombre mémorisé.</td><td>Ergonomie</td><td>Majeure</td></tr><tr><td><b>ENF-06</b></td><td>Maintenabilité</td><td>Code analysé statiquement (PMD, CPD, ESLint) ; couverture des tests automatisés ≥ 40 % des instructions du backend.</td><td>Technique</td><td>Mineure</td></tr><tr><td><b>ENF-07</b></td><td>Portabilité</td><td>Fonctionne sur JDK 17+ et Node.js 18+ ; déployable par conteneur (Dockerfile, Render, Vercel).</td><td>Technique</td><td>Mineure</td></tr><tr><td><b>ENF-08</b></td><td>Sécurité des dépendances</td><td>Aucune dépendance présentant une vulnérabilité connue de sévérité haute ou critique.</td><td>Sécurité</td><td>Majeure</td></tr><tr><td><b>ENF-09</b></td><td>Intégrité et persistance des données</td><td>Les données saisies (base PostgreSQL) sont conservées après un redémarrage de l'application.</td><td>Technique</td><td>Critique</td></tr></tbody></table>
+
+<!-- ======================= 5. SQUASH TM ======================= -->
+<h1>5. Outil de gestion des tests et des exigences : Squash TM (objectif 3)</h1>
+<h2>5.1 Choix de l’outil</h2>
+<p><b>Squash TM</b> est un outil libre de gestion des tests qui gère dans un même référentiel les <b>exigences</b>, les <b>cas de test</b> et les <b>campagnes d’exécution</b>, avec la traçabilité entre eux. Il répond donc à la consigne : simplifier la gestion des tests tout en gérant les exigences du logiciel. Il est en français, gratuit en version Community et s’installe sous Docker.</p>
+<h2>5.2 Organisation du projet EniGov dans Squash TM</h2>
+<ul>
+  <li><b>Exigences</b> : 27 exigences réparties en deux dossiers (fonctionnelles / non fonctionnelles), avec catégorie, criticité et statut « Approuvée ».</li>
+  <li><b>Cas de test</b> : 33 cas répartis en six dossiers : « 01 - Tests unitaires (JUnit 5 + Mockito) », « 02 - Tests d'intégration (Spring Boot + MockMvc + PostgreSQL) », « 03 - Tests système (E2E Playwright) », « 04 - Tests d'acceptation (manuels) », « 05 - Tests non fonctionnels », « 06 - Tests liés aux changements et de maintenance ». Chaque cas a une nature, un type, une importance, des pas de test (action → résultat attendu) et un lien vers les exigences qu’il vérifie.</li>
+  <li><b>Campagne</b> « Campagne de recette EniGov v1.0 » avec deux itérations : build initial v1.0.0, puis build corrigé v1.0.1.</li>
+</ul>
+<p>Pour éviter une saisie manuelle de plus de 30 cas de test, le référentiel a été écrit une seule fois (<code>qa/squash/referentiel.mjs</code>), puis injecté dans Squash TM par son <b>API REST</b> (script <code>qa/squash/seed.mjs</code>). Le même fichier sert à générer les tableaux de ce compte rendu, ce qui garantit leur cohérence.</p>
+<figure style="width:80%"><img src="../results/screens/term-squash-seed.png"><figcaption>Figure 4 – Alimentation de Squash TM par l’API REST</figcaption></figure>
+<figure style="width:100%"><img src="../results/screens/sq-00-projet-exigences.png"><figcaption>Figure 5 – Espace « Exigences » : arborescence et tableau de bord du projet (couverture, statut, criticité)</figcaption></figure>
+<figure style="width:100%"><img src="../results/screens/sq-01-exigence.png"><figcaption>Figure 6 – Exigence EF-06 : criticité, catégorie, indicateurs de couverture et cas de test qui la vérifient</figcaption></figure>
+<figure style="width:100%"><img src="../results/screens/sq-02b-cas-de-test-etapes.png"><figcaption>Figure 7 – Espace « Cas de test » : arborescence par niveau de test et pas de test du cas TA-02</figcaption></figure>
+<h2>5.3 Matrice de traçabilité exigences → cas de test</h2>
+<table class="small"><thead><tr><th>Exigence</th><th>Criticité</th><th>Cas de test qui la vérifient</th></tr></thead><tbody><tr><td><b>EF-01</b> Inscription des étudiants</td><td>Critique</td><td>TI-01, TA-01, TR-02</td></tr><tr><td><b>EF-02</b> Vérification de l'adresse e-mail</td><td>Majeure</td><td>TI-02, TA-01</td></tr><tr><td><b>EF-03</b> Connexion sécurisée et verrouillage du compte</td><td>Critique</td><td>TU-04, TI-03, TI-09, TS-01, TS-02, TR-02</td></tr><tr><td><b>EF-04</b> Mot de passe oublié</td><td>Mineure</td><td><span class="badge warn">non couverte</span></td></tr><tr><td><b>EF-05</b> Dépôt de réclamations</td><td>Critique</td><td>TU-03, TS-04, TA-02, TR-02</td></tr><tr><td><b>EF-06</b> Confidentialité des réclamations privées</td><td>Critique</td><td>TI-05, TR-01</td></tr><tr><td><b>EF-07</b> Vote sur les réclamations publiques</td><td>Majeure</td><td>TU-03, TA-02</td></tr><tr><td><b>EF-08</b> Traitement des réclamations par le délégué</td><td>Critique</td><td>TU-03, TI-06, TS-04</td></tr><tr><td><b>EF-09</b> Publication des annonces</td><td>Majeure</td><td>TS-03</td></tr><tr><td><b>EF-10</b> Création et ciblage des sondages</td><td>Majeure</td><td>TU-01, TU-02, TS-05</td></tr><tr><td><b>EF-11</b> Vote aux sondages</td><td>Critique</td><td>TU-01, TI-07, TS-05, TR-02</td></tr><tr><td><b>EF-12</b> Décisions</td><td>Mineure</td><td><span class="badge warn">non couverte</span></td></tr><tr><td><b>EF-13</b> Messagerie étudiant ↔ délégué</td><td>Majeure</td><td>TI-08, TA-03</td></tr><tr><td><b>EF-14</b> Calendrier des événements</td><td>Mineure</td><td>TA-04, TA-06</td></tr><tr><td><b>EF-15</b> Règlements et documents</td><td>Mineure</td><td><span class="badge warn">non couverte</span></td></tr><tr><td><b>EF-16</b> Notifications in-app</td><td>Majeure</td><td>TI-06, TA-03</td></tr><tr><td><b>EF-17</b> Tableau de bord du délégué</td><td>Mineure</td><td>TI-04, TS-01</td></tr><tr><td><b>EF-18</b> Rôles et contrôle d’accès</td><td>Critique</td><td>TI-04, TS-06, TR-02</td></tr><tr><td><b>ENF-01</b> Sécurité des identifiants et des jetons</td><td>Critique</td><td>TU-04, TR-01</td></tr><tr><td><b>ENF-02</b> Protection de l'API</td><td>Critique</td><td>TI-04</td></tr><tr><td><b>ENF-03</b> Performance</td><td>Majeure</td><td>TNF-01</td></tr><tr><td><b>ENF-04</b> Fiabilité sous charge</td><td>Majeure</td><td>TNF-01</td></tr><tr><td><b>ENF-05</b> Ergonomie et affichage responsive</td><td>Majeure</td><td>TS-07, TA-05</td></tr><tr><td><b>ENF-06</b> Maintenabilité</td><td>Mineure</td><td>TNF-03, TNF-04</td></tr><tr><td><b>ENF-07</b> Portabilité</td><td>Mineure</td><td>TM-01</td></tr><tr><td><b>ENF-08</b> Sécurité des dépendances</td><td>Majeure</td><td>TNF-02</td></tr><tr><td><b>ENF-09</b> Intégrité et persistance des données</td><td>Critique</td><td>TA-06</td></tr></tbody></table>
+<p><b>Couverture des exigences : 24/27 (89 %).</b> Les exigences non couvertes (EF-04, EF-12, EF-15) ont été exclues volontairement : EF-04 et EF-15 dépendent de services externes (envoi d’e-mails Brevo, stockage Cloudinary) non configurés en local, et EF-12 est de criticité mineure. Ce choix est expliqué dans le plan de test (§ 6.1).</p>
+
+<!-- ======================= 6. PLAN DE TEST ======================= -->
+<h1>6. Plan de test (objectif 4)</h1>
+<p>Ce plan s’inspire de la structure de la norme IEEE 829 / ISO 29119-3.</p>
+<h2>6.1 Objet et périmètre</h2>
+<table class=""><thead><tr><th>Dans le périmètre</th><th>Hors périmètre (justification)</th></tr></thead><tbody><tr><td><ul><li>Authentification, inscription, verrouillage, rôles</li><li>Réclamations, votes, traitement, notifications</li><li>Sondages, annonces, événements, messagerie</li><li>Sécurité de l’API, performance, responsive, maintenabilité, dépendances, persistance</li></ul></td><td><ul><li>EF-04 Mot de passe oublié : l’envoi réel d’e-mail (Brevo) n’est pas configuré</li><li>EF-15 Documents : l’upload passe par Cloudinary, non configuré</li><li>EF-12 Décisions : criticité mineure, reportée</li><li>Déploiement cloud (Render / Vercel)</li></ul></td></tr></tbody></table>
+<h2>6.2 Stratégie : approche basée sur les risques</h2>
+<table class=""><thead><tr><th>Risque produit</th><th>Probabilité</th><th>Impact</th><th>Priorité</th><th>Tests prévus</th></tr></thead><tbody><tr><td>Fuite de réclamations privées</td><td>Moyenne</td><td>Critique</td><td><span class="badge ko">P1</span></td><td>Revue de code, TI-05, TR-01</td></tr><tr><td>Accès non autorisé aux fonctions du délégué</td><td>Moyenne</td><td>Critique</td><td><span class="badge ko">P1</span></td><td>TI-04, TS-06, TU-04</td></tr><tr><td>Fraude au vote (double vote)</td><td>Moyenne</td><td>Majeur</td><td><span class="badge ko">P1</span></td><td>TU-01, TI-07, TS-05</td></tr><tr><td>Comptes piratés (force brute)</td><td>Faible</td><td>Critique</td><td><span class="badge warn">P2</span></td><td>TI-03, TI-09</td></tr><tr><td>Perte de données</td><td>Faible</td><td>Critique</td><td><span class="badge warn">P2</span></td><td>Revue de code, TA-06</td></tr><tr><td>Lenteur sous charge</td><td>Faible</td><td>Majeur</td><td><span class="badge warn">P2</span></td><td>TNF-01</td></tr><tr><td>Mauvais affichage sur mobile</td><td>Moyenne</td><td>Moyen</td><td><span class="badge warn">P2</span></td><td>TS-07, TA-05</td></tr><tr><td>Dépendances vulnérables</td><td>Élevée</td><td>Majeur</td><td><span class="badge warn">P2</span></td><td>TNF-02</td></tr></tbody></table>
+<h2>6.3 Niveaux et types de test</h2>
+<figure>
+<svg viewBox="0 0 780 300" width="100%" font-family="Segoe UI, Arial, sans-serif" role="img" aria-label="Cycle en V">
+  <defs><marker id="fl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+  
+  <rect x="20" y="20" width="200" height="44" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.4"/>
+  <text x="120" y="39" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1e293b">Besoins (EF / ENF)</text>
+  <text x="120" y="55" text-anchor="middle" font-size="10.5" fill="#475569">chapitre 2</text>
+  
+  <rect x="80" y="90" width="200" height="44" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.4"/>
+  <text x="180" y="109" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1e293b">Spécifications</text>
+  <text x="180" y="125" text-anchor="middle" font-size="10.5" fill="#475569">cas d’utilisation, règles</text>
+  
+  <rect x="140" y="160" width="200" height="44" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.4"/>
+  <text x="240" y="179" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1e293b">Conception</text>
+  <text x="240" y="195" text-anchor="middle" font-size="10.5" fill="#475569">API REST, modèle JPA</text>
+  
+  <rect x="290" y="236" width="200" height="44" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1.4"/>
+  <text x="390" y="255" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1e293b">Codage</text>
+  <text x="390" y="271" text-anchor="middle" font-size="10.5" fill="#475569">Spring Boot · React</text>
+  
+  <rect x="560" y="20" width="200" height="44" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.4"/>
+  <text x="660" y="39" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1e293b">Tests d’acceptation</text>
+  <text x="660" y="55" text-anchor="middle" font-size="10.5" fill="#475569">TA-01 … TA-06</text>
+  
+  <rect x="500" y="90" width="200" height="44" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.4"/>
+  <text x="600" y="109" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1e293b">Tests système</text>
+  <text x="600" y="125" text-anchor="middle" font-size="10.5" fill="#475569">TS-01 … TS-07, TNF</text>
+  
+  <rect x="440" y="160" width="200" height="44" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.4"/>
+  <text x="540" y="179" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1e293b">Tests d’intégration</text>
+  <text x="540" y="195" text-anchor="middle" font-size="10.5" fill="#475569">TI-01 … TI-09</text>
+  
+  <line x1="120" y1="64" x2="160" y2="88" stroke="#64748b" stroke-width="1.4" marker-end="url(#fl)" />
+  
+  <line x1="180" y1="134" x2="220" y2="158" stroke="#64748b" stroke-width="1.4" marker-end="url(#fl)" />
+  
+  <line x1="240" y1="204" x2="300" y2="234" stroke="#64748b" stroke-width="1.4" marker-end="url(#fl)" />
+  
+  
+  <line x1="480" y1="234" x2="530" y2="206" stroke="#64748b" stroke-width="1.4" marker-end="url(#fl)" />
+  
+  <line x1="560" y1="158" x2="590" y2="136" stroke="#64748b" stroke-width="1.4" marker-end="url(#fl)" />
+  
+  <line x1="620" y1="88" x2="650" y2="66" stroke="#64748b" stroke-width="1.4" marker-end="url(#fl)" />
+  
+  <text x="600" y="262" font-size="12" font-weight="600" fill="#16a34a">Tests unitaires TU-01 … TU-04</text>
+  <line x1="490" y1="258" x2="596" y2="258" stroke="#16a34a" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <line x1="220" y1="42" x2="558" y2="42" stroke="#94a3b8" stroke-dasharray="4 4"/><line x1="280" y1="112" x2="498" y2="112" stroke="#94a3b8" stroke-dasharray="4 4"/><line x1="340" y1="182" x2="438" y2="182" stroke="#94a3b8" stroke-dasharray="4 4"/>
+  <text x="390" y="37" text-anchor="middle" font-size="10" fill="#64748b">valide</text>
+  <text x="390" y="107" text-anchor="middle" font-size="10" fill="#64748b">vérifie</text>
+  <text x="390" y="177" text-anchor="middle" font-size="10" fill="#64748b">vérifie</text>
+</svg><figcaption>Figure 8 – Correspondance entre les phases de développement et les niveaux de test (cycle en V)</figcaption></figure>
+<table class="small"><thead><tr><th>Niveau \ Type</th><th>Fonctionnel</th><th>Non fonctionnel</th><th>Structurel (boîte blanche)</th><th>Lié aux changements</th><th>Maintenance</th></tr></thead><tbody><tr><td><b>Unitaire</b></td><td>TU-01, TU-02, TU-03</td><td>TU-04 (sécurité)</td><td>TNF-04 (JaCoCo)</td><td>TR-01 (re-test TU-04)</td><td>—</td></tr><tr><td><b>Intégration</b></td><td>TI-01, 02, 06, 07, 08</td><td>TI-03, TI-04, TI-09 (sécurité)</td><td>TNF-04 (JaCoCo)</td><td>TR-01 (re-test TI-05), TR-02</td><td>TM-01 (JDK 25)</td></tr><tr><td><b>Système</b></td><td>TS-01 … TS-06</td><td>TS-07 (responsive), TNF-01 (charge), TNF-02 (dépendances)</td><td>—</td><td>TR-02 (régression E2E)</td><td>TM-01 (PostgreSQL 16 / Docker)</td></tr><tr><td><b>Acceptation</b></td><td>TA-01 … TA-04</td><td>TA-05 (utilisabilité)</td><td>—</td><td>—</td><td>TA-06 (persistance au redémarrage)</td></tr></tbody></table>
+<h2>6.4 Techniques de test</h2>
+<table class="small"><thead><tr><th>Famille</th><th>Technique</th><th>Application dans le projet</th></tr></thead><tbody><tr><td><b>Statique</b> (sans exécuter le code)</td><td>Revue de code manuelle</td><td>Lecture des contrôleurs et services : 3 anomalies trouvées avant tout test dynamique (ANO-01, 03, 04)</td></tr><tr><td></td><td>Analyse statique outillée</td><td>PMD et CPD (Java), ESLint (JavaScript)</td></tr><tr><td></td><td>Analyse de composition logicielle</td><td><code>npm audit</code> sur les dépendances du frontend</td></tr><tr><td></td><td>Revue de la documentation</td><td>README / guide de déploiement confrontés à l’installation réelle (ANO-08)</td></tr><tr><td><b>Dynamique boîte noire</b></td><td>Partitions d’équivalence</td><td>Mots de passe valides / invalides, jetons JWT (TU-04, TI-01)</td></tr><tr><td></td><td>Analyse des valeurs limites</td><td>Mot de passe 7/8 et 40/41 caractères ; 1 et 2 options ; index −1 et 3 ; 4e et 5e échec de connexion</td></tr><tr><td></td><td>Table de décision</td><td>Visibilité d’un sondage selon la filière et la promotion (TU-02, 9 règles)</td></tr><tr><td></td><td>Transitions d’états</td><td>Vote pour / contre / annulé ; statut de réclamation ; verrouillage du compte</td></tr><tr><td></td><td>Cas d’utilisation</td><td>Scénarios E2E et d’acceptation multi-acteurs</td></tr><tr><td><b>Dynamique boîte blanche</b></td><td>Couverture des instructions et des branches</td><td>JaCoCo sur l’ensemble des tests JUnit (TNF-04)</td></tr><tr><td><b>Basée sur l’expérience</b></td><td>Test exploratoire guidé par la revue</td><td>TA-06 : vérifier la persistance des événements après redémarrage</td></tr></tbody></table>
+<h2>6.5 Tests manuels et automatisés</h2>
+<table class=""><thead><tr><th>Mode</th><th>Cas de test</th><th>Outils</th></tr></thead><tbody><tr><td>Automatisé</td><td>TU-01, TU-02, TU-03, TU-04, TI-01, TI-02, TI-03, TI-04, TI-05, TI-06, TI-07, TI-08, TI-09, TS-01, TS-02, TS-03, TS-04, TS-05, TS-06, TS-07, TNF-01, TNF-02, TNF-03, TNF-04, TR-01, TR-02, TM-01</td><td>JUnit 5, Mockito, MockMvc, Playwright, k6, PMD, ESLint, npm audit, JaCoCo</td></tr><tr><td>Manuel</td><td>TA-01, TA-02, TA-03, TA-04, TA-05, TA-06</td><td>Navigateur, fiches de test Squash TM, terminal (curl)</td></tr></tbody></table>
+<h2>6.6 Environnement et données de test</h2>
+<ul>
+  <li>Tests d’intégration : base dédiée <code>enigov_test</code>, recréée à chaque exécution (<code>ddl-auto=create-drop</code>, profil Spring <code>test</code>). Seul l’envoi d’e-mails est simulé (<code>@MockBean EmailService</code>).</li>
+  <li>Tests système et d’acceptation : base <code>enigov</code> ; deux étudiants fictifs (Amira Ben Salah, Youssef Trabelsi) créés par l’API et validés en base au début de chaque exécution (<code>global-setup.js</code>) ; compte délégué pré-créé.</li>
+  <li>Navigateur : Chromium (bureau 1440 × 900 et émulation Pixel 7).</li>
+</ul>
+<h2>6.7 Critères d’entrée, de sortie et de suspension</h2>
+<table class=""><thead><tr><th>Critère</th><th>Définition</th></tr></thead><tbody><tr><td>Entrée</td><td>Application compilée et démarrée ; base de test accessible ; exigences approuvées dans Squash TM</td></tr><tr><td>Sortie</td><td>100 % des cas planifiés exécutés ; aucune anomalie critique ouverte ; couverture des exigences ≥ 85 % ; couverture des instructions backend ≥ 40 %</td></tr><tr><td>Suspension</td><td>Environnement indisponible ou anomalie bloquante empêchant plus de 30 % des tests</td></tr><tr><td>Reprise</td><td>Correctif livré ; re-test de confirmation puis non-régression</td></tr></tbody></table>
+<h2>6.8 Gestion des anomalies</h2>
+<p>Cycle de vie : <b>Détectée → Confirmée → Corrigée → Re-testée → Fermée</b> (ou <b>Ouverte</b> si le correctif est planifié plus tard). Gravité : <b>Critique</b> (sécurité ou perte de données, bloque la mise en production), <b>Majeure</b> (fonction dégradée), <b>Mineure</b> (gêne, qualité). Chaque anomalie est référencée (ANO-xx) dans le commentaire de l’exécution Squash TM correspondante.</p>
+<h2>6.9 Planning et livrables</h2>
+<table class=""><thead><tr><th>Phase</th><th>Livrables</th></tr></thead><tbody><tr><td>1. Installation et lancement</td><td>Environnement Docker, application démarrée</td></tr><tr><td>2. Analyse des besoins</td><td>Exigences EF / ENF dans Squash TM</td></tr><tr><td>3. Conception des tests</td><td>Cas de test, matrice de traçabilité, plan de test</td></tr><tr><td>4. Itération 1 (build v1.0.0)</td><td>Exécution des tests unitaires et d’intégration, anomalies</td></tr><tr><td>5. Correctifs</td><td>Correction de ANO-01 et ANO-02</td></tr><tr><td>6. Itération 2 (build v1.0.1)</td><td>Re-test, non-régression, tests système, acceptation, non fonctionnels, maintenance</td></tr><tr><td>7. Clôture</td><td>Bilan, compte rendu</td></tr></tbody></table>
+
+<!-- ======================= 7. EXÉCUTION ======================= -->
+<h1>7. Exécution du plan de test (objectif 5)</h1>
+<h2>7.1 Tests statiques</h2>
+<h3>7.1.1 Revue de code manuelle</h3>
+<p>Avant toute exécution, les contrôleurs et services du backend ont été relus en les confrontant aux exigences. Trois défauts ont été identifiés, puis confirmés par des tests dynamiques :</p>
+<pre>// ComplaintController.java — aucune vérification du propriétaire (EF-06)  → ANO-01
+@GetMapping("/{id}")
+public ResponseEntity&lt;ComplaintResponse&gt; getComplaint(@PathVariable String id, Principal principal) {
+    return ResponseEntity.ok(complaintService.getById(id, principal.getName()));   // tout étudiant authentifié
+}
+
+// DatabaseSeeder.java — exécuté à CHAQUE démarrage (ENF-09)                 → ANO-04
+public void run(String... args) {
+    eventRepository.deleteAll();     // supprime aussi les événements créés par le délégué
+    seedEvents();
+}
+
+// AuthController.java — le compteur n'est remis à 0 qu'après une connexion réussie (EF-03) → ANO-03
+int attempts = user.getFailedLoginAttempts() + 1;   // 6, 7, ... après expiration du verrou
+if (attempts &gt;= MAX_FAILED_ATTEMPTS) { /* reverrouille 15 min dès le 1er échec */ }</pre>
+<h3>7.1.2 Analyse statique du backend (PMD / CPD)</h3>
+<figure style="width:100%"><img src="../results/screens/term-pmd.png"><figcaption>Figure 9 – Résultat de PMD 7.17 et CPD sur le backend</figcaption></figure>
+<p>Aucune violation de priorité 1 ou 2. Les points notables : trois blocs <code>catch</code> vides (des erreurs d’envoi d’e-mail sont silencieusement ignorées), <code>UserDetailsImpl</code> redéfinit <code>equals()</code> sans <code>hashCode()</code>, des imports inutilisés et 8 blocs dupliqués de 10 à 17 lignes.</p>
+<h3>7.1.3 Analyse statique du frontend (ESLint)</h3>
+<figure style="width:100%"><img src="../results/screens/term-eslint.png"><figcaption>Figure 10 – Extrait du rapport ESLint (59 problèmes : 55 erreurs, 4 avertissements)</figcaption></figure>
+<p>Répartition : 34 variables ou imports inutilisés, 19 caractères non échappés dans le JSX, 2 dépendances manquantes dans des <code>useEffect</code> (risque de données obsolètes à l’écran), 2 attributs inconnus. Ces défauts relèvent de la dette technique (<b>ANO-07</b>).</p>
+<h3>7.1.4 Analyse des dépendances (npm audit)</h3>
+<figure style="width:100%"><img src="../results/screens/term-audit.png"><figcaption>Figure 11 – Audit des dépendances du frontend</figcaption></figure>
+<p>29 vulnérabilités connues : 15 hautes, 11 modérées, 3 faibles. Elles touchent notamment <code>axios</code> (SSRF, contournement d’authentification) et <code>react-router</code> (redirection ouverte). L’exigence ENF-08 n’est pas satisfaite (<b>ANO-06</b>).</p>
+
+<h2>7.2 Tests unitaires (JUnit 5 + Mockito)</h2>
+<p>Les services sont testés isolément ; leurs dépendances (repositories, notifications) sont simulées avec Mockito. Exemple : la table de décision de la visibilité d’un sondage, implémentée par un test paramétré :</p>
+<pre>@ParameterizedTest
+@CsvSource(nullValues = "-", value = {
+    // targetAll, filiereCible, promoCible, filiereEtu, promoEtu, attendu
+    "false, INFO, DEUXIEME_ANNEE, INFO, DEUXIEME_ANNEE, true",
+    "false, INFO, DEUXIEME_ANNEE, INFO, PREMIERE_ANNEE, false",
+    "false, INFO, DEUXIEME_ANNEE, GSIL, DEUXIEME_ANNEE, false",  /* ... 9 règles */ })
+void visibilite(boolean targetAll, Filiere fCible, Promotion pCible, Filiere fEtu, Promotion pEtu, boolean attendu) {
+    Poll poll = new Poll();  poll.setTargetAll(targetAll);  /* ... */
+    assertEquals(attendu, poll.isVisibleTo(fEtu, pEtu));
+}</pre>
+<table class="small"><thead><tr><th>Cas</th><th>Classe de test</th><th>Tests</th><th>Technique</th><th>Itération 1</th><th>Itération 2</th></tr></thead><tbody><tr><td><b>TU-01</b></td><td>PollServiceTest.java</td><td>11</td><td>Partitions d’équivalence, valeurs limites (index −1, 3, 99 ; 1 et 2 options)</td><td><span class="badge ok">Succès</span></td><td>—</td></tr><tr><td><b>TU-02</b></td><td>PollVisibilityTest.java</td><td>9</td><td>Table de décision (9 combinaisons filière × promotion)</td><td><span class="badge ok">Succès</span></td><td>—</td></tr><tr><td><b>TU-03</b></td><td>ComplaintServiceTest.java</td><td>5</td><td>Test de transitions d’états (aucun → pour → aucun, pour → contre)</td><td><span class="badge ok">Succès</span></td><td>—</td></tr><tr><td><b>TU-04</b></td><td>JwtUtilsTest.java</td><td>4</td><td>Partitions : jeton valide, signé avec une autre clé, expiré, mal formé</td><td><span class="badge ko">Échec</span></td><td><span class="badge ok">Succès</span></td></tr></tbody></table>
+<p>Le test <code>JwtUtilsTest.jetonSigneAvecAutreCle</code> a échoué lors de la première exécution : un jeton signé avec une autre clé provoque une <code>SignatureException</code> non interceptée au lieu d’un rejet propre (<b>ANO-02</b>). L’impact reste limité car le filtre HTTP intercepte l’exception (le test d’intégration TI-04 confirme une réponse 401/403), mais le contrat de la méthode n’est pas respecté.</p>
+
+<h2>7.3 Tests d’intégration (Spring Boot + MockMvc + PostgreSQL)</h2>
+<p>Le contexte Spring complet (sécurité, contrôleurs, services, JPA) est démarré sur une vraie base PostgreSQL de test. Les requêtes HTTP sont simulées avec MockMvc. Exemple : le test qui a révélé la fuite de confidentialité :</p>
+<pre>@Test @DisplayName("ANO-01 : un autre étudiant ne doit pas lire une réclamation privée par son identifiant")
+void priveeInaccessibleParId() throws Exception {
+    Session a = nouvelEtudiant("a");   Session b = nouvelEtudiant("b");
+    String id = creerReclamation(a, "Privée par id", false);
+    mvc.perform(get("/api/complaints/" + id).header("Authorization", b.bearer())).andExpect(status().isForbidden());
+    mvc.perform(get("/api/complaints/" + id).header("Authorization", a.bearer())).andExpect(status().isOk());
+}</pre>
+<table class="small"><thead><tr><th>Cas</th><th>Objet</th><th>Itération 1</th><th>Itération 2</th><th>Commentaire</th></tr></thead><tbody><tr><td><b>TI-01</b></td><td>Inscription : domaine et politique de mot de passe</td><td><span class="badge ok">Succès</span></td><td>—</td><td>6 valeurs limites + domaine + doublon conformes</td></tr><tr><td><b>TI-02</b></td><td>Vérification d’e-mail obligatoire avant connexion</td><td><span class="badge ok">Succès</span></td><td>—</td><td>403 puis 200 après vérification</td></tr><tr><td><b>TI-03</b></td><td>Verrouillage du compte après 5 échecs</td><td><span class="badge ok">Succès</span></td><td>—</td><td>4 × 401 puis 429 au 5e échec</td></tr><tr><td><b>TI-04</b></td><td>Matrice d’autorisations par rôle</td><td><span class="badge ok">Succès</span></td><td>—</td><td>6/6 contrôles d’accès conformes</td></tr><tr><td><b>TI-05</b></td><td>Confidentialité d’une réclamation privée (accès par identifiant)</td><td><span class="badge ko">Échec</span></td><td><span class="badge ok">Succès</span></td><td>Re-test après correctif ANO-01 : 403 pour un autre étudiant, 200 pour l’auteur et le délégué</td></tr><tr><td><b>TI-06</b></td><td>Traitement d’une réclamation et notification de l’étudiant</td><td><span class="badge ok">Succès</span></td><td>—</td><td>Statut RESOLVED + notification COMPLAINT_STATUS_CHANGED</td></tr><tr><td><b>TI-07</b></td><td>Vote unique à un sondage</td><td><span class="badge ok">Succès</span></td><td>—</td><td>Second vote refusé (400)</td></tr><tr><td><b>TI-08</b></td><td>Messagerie : étudiant vers étudiant interdit</td><td><span class="badge ok">Succès</span></td><td>—</td><td>Message étudiant → étudiant refusé (400)</td></tr><tr><td><b>TI-09</b></td><td>Remise à zéro du compteur après expiration du verrouillage</td><td><span class="badge ko">Échec</span></td><td><span class="badge warn">Bloqué</span></td><td>ANO-03 ouverte : test désactivé (@Disabled) en attendant le correctif</td></tr></tbody></table>
+<figure style="width:100%"><img src="../results/screens/term-mvn-run1.png"><figcaption>Figure 12 – Itération 1 : 52 tests, 3 en échec (ANO-01, ANO-02, ANO-03)</figcaption></figure>
+
+<h2>7.4 Tests structurels (couverture de code avec JaCoCo)</h2>
+<p>Le plugin JaCoCo instrumente le bytecode pendant <code>mvn test</code> et mesure les instructions et les branches exécutées par les tests unitaires et d’intégration.</p>
+<figure style="width:85%"><img src="../results/screens/rep-jacoco-index.png"><figcaption>Figure 13 – Couverture globale du backend : 49 % des instructions, 34 % des branches</figcaption></figure>
+<figure style="width:85%"><img src="../results/screens/rep-jacoco-service.png"><figcaption>Figure 14 – Couverture par service : les services ciblés (PollService, ComplaintService) dépassent 50 %</figcaption></figure>
+<p><b>Analyse :</b> l’objectif de 40 % des instructions est atteint (49 %). La couverture est concentrée sur les modules à risque P1 (réclamations 77 %, sondages 60 %, sécurité 91 %). Les services de messagerie, d’annonces et d’événements sont surtout exercés par les tests E2E, que JaCoCo ne mesure pas dans cette configuration. La vue détaillée montre aussi des branches non exécutées : <code>getAllComplaints</code> n’est appelée par aucun test JUnit, ce qui indique les prochains tests à écrire.</p>
+<figure style="width:100%"><img src="../results/screens/rep-jacoco-source.png"><figcaption>Figure 15 – Vue source JaCoCo : lignes couvertes (vert), non couvertes (rouge), branches partielles (jaune)</figcaption></figure>
+
+<h2>7.5 Tests système (E2E avec Playwright)</h2>
+<p>Les scénarios sont joués dans un vrai navigateur (Chromium) sur l’application complète : frontend, backend et base de données. Ils enchaînent plusieurs acteurs (le délégué publie, l’étudiant consulte).</p>
+<figure style="width:100%"><img src="../results/screens/term-playwright.png"><figcaption>Figure 16 – Exécution de la suite E2E : 6 réussis, 1 échec (TS-07)</figcaption></figure>
+<figure style="width:85%"><img src="../results/screens/rep-playwright.png"><figcaption>Figure 17 – Rapport HTML Playwright</figcaption></figure>
+<div class="duo"><figure style="width:100%"><img src="../results/screens/e2e-ts03-annonce-delegue.png"><figcaption>Figure 18 – TS-03 : le délégué publie une annonce</figcaption></figure><figure style="width:100%"><img src="../results/screens/e2e-ts03-annonce-etudiant.png"><figcaption>Figure 19 – TS-03 : l’étudiante la voit, sans bouton de création</figcaption></figure></div>
+<div class="duo"><figure style="width:100%"><img src="../results/screens/e2e-ts04-reclamation-creee.png"><figcaption>Figure 20 – TS-04 : réclamation créée, statut « En attente »</figcaption></figure><figure style="width:100%"><img src="../results/screens/e2e-ts04-delegue-repond.png"><figcaption>Figure 21 – TS-04 : le délégué passe le statut à « Résolue » et répond</figcaption></figure></div>
+<div class="duo"><figure style="width:100%"><img src="../results/screens/e2e-ts04-etudiant-resolue.png"><figcaption>Figure 22 – TS-04 : l’étudiante voit le statut « Résolue » et la réponse</figcaption></figure><figure style="width:100%"><img src="../results/screens/e2e-ts05-vote-etudiant.png"><figcaption>Figure 23 – TS-05 : vote d’un étudiant, résultat 100 %</figcaption></figure></div>
+<div class="duo"><figure style="width:100%"><img src="../results/screens/e2e-ts02-login-refuse.png"><figcaption>Figure 24 – TS-02 : mauvais mot de passe, 4 tentatives restantes</figcaption></figure><figure style="width:100%"><img src="../results/screens/e2e-ts06-acces-etudiant.png"><figcaption>Figure 25 – TS-06 : un étudiant qui ouvre /students est redirigé vers l’accueil</figcaption></figure></div>
+<div class="duo" style="grid-template-columns:1fr 1fr 1.4fr;align-items:start"><figure style="width:100%"><img src="../results/screens/e2e-ts07-mobile-login.png"><figcaption>Figure 26 – TS-07 : connexion sur Pixel 7</figcaption></figure><figure style="width:100%"><img src="../results/screens/e2e-ts07-mobile-accueil.png"><figcaption>Figure 27 – TS-07 : accueil sur Pixel 7</figcaption></figure><div class="alerte" style="margin-top:20px"><b>TS-07 en échec – ANO-05.</b> Sur smartphone, la barre latérale reste affichée en permanence et occupe près de la moitié de l’écran ; le contenu déborde de <b>107 px</b> horizontalement (titres et cartes coupés). ENF-05 n’est pas satisfaite.</div></div>
+
+<h2>7.6 Tests d’acceptation manuels</h2>
+<p>Les fiches de test TA-01 à TA-06 ont été rédigées dans Squash TM (pas de test : action → résultat attendu), puis exécutées pas à pas dans le navigateur du point de vue de l’utilisateur. Chaque étape a été capturée comme preuve ; le script <code>qa/acceptance/run-acceptance.mjs</code> a servi à enregistrer ces preuves. Les résultats ont ensuite été saisis dans l’exécution Squash TM correspondante.</p>
+<h3>TA-01 — Inscription d’un nouvel étudiant (EF-01, EF-02)</h3>
+<table class="small"><thead><tr><th>#</th><th>Action</th><th>Résultat attendu</th><th>Résultat obtenu</th></tr></thead><tbody><tr><td>1</td><td>Ouvrir /register et s’inscrire avec une adresse @gmail.com</td><td>Inscription refusée : seuls les e-mails @enicar.ucar.tn sont acceptés</td><td><span class="badge ok">Succès</span> Conforme au résultat attendu</td></tr><tr><td>2</td><td>Saisir une adresse valide avec un mot de passe faible « motdepasse »</td><td>Indicateur « Faible — min. 8 caractères, 1 majuscule, 1 chiffre » et bouton S’inscrire désactivé</td><td><span class="badge ok">Succès</span> Conforme au résultat attendu</td></tr><tr><td>3</td><td>Saisir le mot de passe « Etudiant2026 » et valider</td><td>Message « Vérifiez votre email ! » affiché</td><td><span class="badge ok">Succès</span> Conforme au résultat attendu</td></tr><tr><td>4</td><td>Tenter de se connecter avant d’avoir cliqué sur le lien de vérification</td><td>Connexion refusée : e-mail non vérifié</td><td><span class="badge ok">Succès</span> Conforme au résultat attendu</td></tr></tbody></table>
+<div class="duo"><figure style="width:100%"><img src="../results/screens/ta01-1-domaine-refuse.png"><figcaption>Figure 28 – Étape 1 : adresse @gmail.com refusée</figcaption></figure><figure style="width:100%"><img src="../results/screens/ta01-2-mdp-faible.png"><figcaption>Figure 29 – Étape 2 : mot de passe faible, bouton désactivé</figcaption></figure></div>
+<div class="duo"><figure style="width:100%"><img src="../results/screens/ta01-3-inscription-ok.png"><figcaption>Figure 30 – Étape 3 : inscription acceptée, vérification demandée</figcaption></figure><figure style="width:100%"><img src="../results/screens/ta01-4-email-non-verifie.png"><figcaption>Figure 31 – Étape 4 : connexion refusée tant que l’e-mail n’est pas vérifié</figcaption></figure></div>
+<h3>TA-02 — Réclamation publique et vote (EF-05, EF-07)</h3>
+<table class="small"><thead><tr><th>#</th><th>Action</th><th>Résultat attendu</th><th>Résultat obtenu</th></tr></thead><tbody><tr><td>1</td><td>Amira crée une réclamation PUBLIQUE « Wi-Fi instable au bloc B »</td><td>Réclamation créée, statut « En attente », badge « Publique »</td><td><span class="badge ok">Succès</span> Conforme au résultat attendu</td></tr><tr><td>2</td><td>Youssef ouvre l’onglet « Publiques » et vote pour (pouce levé)</td><td>La réclamation est visible avec le nom de l’auteur ; score = 1</td><td><span class="badge ok">Succès</span> Conforme au résultat attendu</td></tr><tr><td>3</td><td>Youssef clique à nouveau sur le pouce levé</td><td>Le vote est annulé (bascule) ; score = 0</td><td><span class="badge ok">Succès</span> Conforme au résultat attendu</td></tr></tbody></table>
+<div class="duo"><figure style="width:100%"><img src="../results/screens/ta02-2-vote-pour.png"><figcaption>Figure 32 – Vote « pour » : score = 1 (pouce vert)</figcaption></figure><figure style="width:100%"><img src="../results/screens/ta02-3-vote-annule.png"><figcaption>Figure 33 – Second clic : vote annulé, score = 0</figcaption></figure></div>
+<h3>TA-03 — Message au délégué et notification (EF-13, EF-16)</h3>
+<table class="small"><thead><tr><th>#</th><th>Action</th><th>Résultat attendu</th><th>Résultat obtenu</th></tr></thead><tbody><tr><td>1</td><td>Youssef ouvre Messagerie et clique sur « Nouveau message »</td><td>La liste de contacts ne propose que le délégué (pas les autres étudiants)</td><td><span class="badge ok">Succès</span> Conforme au résultat attendu</td></tr><tr><td>2</td><td>Sélectionner le délégué, écrire un message et l’envoyer</td><td>Le message apparaît dans la conversation</td><td><span class="badge ok">Succès</span> Conforme au résultat attendu</td></tr><tr><td>3</td><td>Le délégué se connecte et ouvre la conversation</td><td>Badge de notification sur la cloche ; message reçu de Youssef</td><td><span class="badge ok">Succès</span> Conforme au résultat attendu</td></tr></tbody></table>
+<div class="duo"><figure style="width:100%"><img src="../results/screens/ta03-1-contacts.png"><figcaption>Figure 34 – L’étudiant ne peut contacter que le délégué</figcaption></figure><figure style="width:100%"><img src="../results/screens/ta03-3a-notification.png"><figcaption>Figure 35 – Le délégué reçoit une notification « Nouveau message »</figcaption></figure></div>
+<h3>TA-04 — Calendrier des événements (EF-14)</h3>
+<table class="small"><thead><tr><th>#</th><th>Action</th><th>Résultat attendu</th><th>Résultat obtenu</th></tr></thead><tbody><tr><td>1</td><td>Le délégué crée l’événement « Forum des clubs » (15/12/2026 10:00, Hall principal)</td><td>L’événement apparaît dans la liste</td><td><span class="badge ok">Succès</span> Conforme au résultat attendu</td></tr><tr><td>2</td><td>Amira consulte la page Événements</td><td>L’événement est visible ; aucun bouton de création pour l’étudiant</td><td><span class="badge ok">Succès</span> Conforme au résultat attendu</td></tr></tbody></table>
+<figure style="width:80%"><img src="../results/screens/ta04-2-evenement-etudiant.png"><figcaption>Figure 36 – L’étudiante voit l’événement créé par le délégué</figcaption></figure>
+<h3>TA-05 — Thème clair / sombre (ENF-05)</h3>
+<table class="small"><thead><tr><th>#</th><th>Action</th><th>Résultat attendu</th><th>Résultat obtenu</th></tr></thead><tbody><tr><td>1</td><td>Cliquer sur l’icône lune dans l’en-tête</td><td>L’interface passe en thème sombre</td><td><span class="badge ok">Succès</span> Conforme au résultat attendu</td></tr><tr><td>2</td><td>Recharger la page (F5)</td><td>Le thème sombre est conservé</td><td><span class="badge ok">Succès</span> Conforme au résultat attendu</td></tr></tbody></table>
+<figure style="width:80%"><img src="../results/screens/ta05-2-theme-conserve.png"><figcaption>Figure 37 – Thème sombre conservé après rechargement</figcaption></figure>
+<h3>TA-06 — Persistance des événements après redémarrage (ENF-09)</h3>
+<p>Test exploratoire guidé par la revue de code (§ 7.1.1) : on crée un événement, on redémarre le backend et on vérifie qu’il existe toujours.</p>
+<figure style="width:100%"><img src="../results/screens/term-ano04.png"><figcaption>Figure 38 – TA-06 en échec : l’événement créé disparaît au redémarrage (ANO-04)</figcaption></figure>
+
+<h2>7.7 Tests non fonctionnels</h2>
+<h3>Performance et fiabilité : test de charge k6 (TNF-01)</h3>
+<p>Profil de charge : montée à 20 utilisateurs virtuels en 10 s, palier de 40 s, descente en 10 s. Chaque utilisateur consulte cinq ressources (annonces, événements, sondages, réclamations, statistiques), puis marque une pause d’une seconde. Seuils : p(95) &lt; 500 ms (ENF-03) et taux d’échec &lt; 1 % (ENF-04).</p>
+<figure style="width:100%"><img src="../results/screens/term-k6.png"><figcaption>Figure 39 – Résultat k6 : les deux seuils sont respectés</figcaption></figure>
+<p><b>Résultat :</b> 4 631 requêtes (56 req/s) ; temps de réponse moyen 18,8 ms, p(95) = 35,7 ms, maximum 247 ms. Une seule requête a échoué (0,02 %), sur un délai réseau entre le conteneur k6 et l’hôte (<i>i/o timeout</i>), et non sur une erreur applicative. ENF-03 et ENF-04 sont satisfaites avec une large marge.</p>
+<h3>Sécurité</h3>
+<ul>
+  <li>Matrice d’autorisations (TI-04, TS-06) : sans jeton, avec un jeton falsifié ou avec le rôle étudiant, les ressources du délégué sont refusées (401/403, jamais 500). <span class="badge ok">Conforme</span></li>
+  <li>Verrouillage après 5 échecs (TI-03) <span class="badge ok">Conforme</span> ; reverrouillage abusif après expiration (TI-09) <span class="badge ko">ANO-03</span></li>
+  <li>Confidentialité des réclamations privées (TI-05) <span class="badge ko">ANO-01</span>, corrigée puis re-testée <span class="badge ok">Conforme</span></li>
+  <li>Dépendances vulnérables (TNF-02) <span class="badge ko">ANO-06</span></li>
+</ul>
+<h3>Ergonomie, compatibilité et maintenabilité</h3>
+<ul>
+  <li>Responsive (TS-07) : <span class="badge ko">ANO-05</span> ; thème clair/sombre mémorisé (TA-05) <span class="badge ok">Conforme</span></li>
+  <li>Maintenabilité (TNF-03, TNF-04) : couverture 49 % <span class="badge ok">Conforme</span> ; analyse statique <span class="badge ko">ANO-07</span></li>
+</ul>
+
+<h2>7.8 Tests liés aux changements et tests de maintenance</h2>
+<h3>Correctifs appliqués</h3>
+<p>Les deux anomalies corrigeables sans changement de conception ont été corrigées : <b>ANO-01</b> (contrôle du propriétaire dans <code>ComplaintService.getById</code>) et <b>ANO-02</b> (interception de <code>SecurityException</code> dans <code>JwtUtils</code>).</p>
+<figure style="width:100%"><img src="../results/screens/term-diff.png"><figcaption>Figure 40 – Modifications apportées au code (git diff)</figcaption></figure>
+<h3>Re-test de confirmation (TR-01) et non-régression (TR-02)</h3>
+<p>Le <b>re-test</b> ré-exécute les cas qui avaient échoué (TU-04, TI-05) pour confirmer la correction. La <b>non-régression</b> ré-exécute toute la suite automatisée (52 tests JUnit et 7 tests E2E) pour vérifier que les modifications n’ont rien cassé. TI-09 (ANO-03, non corrigée) est désactivé avec <code>@Disabled</code> et une justification, puis marqué « Bloqué » dans Squash TM.</p>
+<figure style="width:100%"><img src="../results/screens/term-mvn-run2.png"><figcaption>Figure 41 – Itération 2 : 52 tests, 51 réussis, 1 ignoré (ANO-03), BUILD SUCCESS</figcaption></figure>
+<p>La vue source JaCoCo (figure 15) montre que le nouveau code du correctif ANO-01 est entièrement exécuté par les tests (branches en vert).</p>
+<h3>Tests de maintenance (TM-01)</h3>
+<p>Le projet cible Java 17 et une base PostgreSQL locale. Il a été porté vers un nouvel environnement : <b>JDK 25</b> et <b>PostgreSQL 16 sous Docker</b>. La compilation et l’ensemble des tests passent. Un seul ajustement a été nécessaire : Mockito/Byte Buddy 1.14 ne reconnaît pas officiellement le JDK 25, d’où l’option <code>-Dnet.bytebuddy.experimental=true</code> ajoutée au <code>pom.xml</code>. Une mise à jour de Spring Boot (≥ 3.5) supprimerait ce contournement.</p>
+
+<h2>7.9 Suivi de la campagne dans Squash TM</h2>
+<figure style="width:100%"><img src="../results/screens/sq-03c-iteration1-plan.png"><figcaption>Figure 42 – Itération 1 (build v1.0.0) : plan d’exécution et statuts</figcaption></figure>
+<figure style="width:100%"><img src="../results/screens/sq-03b-iteration2-plan.png"><figcaption>Figure 43 – Itération 2 (build v1.0.1) : plan d’exécution et statuts</figcaption></figure>
+<div class="duo"><figure style="width:100%"><img src="../results/screens/sq-03-iteration2.png"><figcaption>Figure 44 – Tableau de bord de l’itération 2</figcaption></figure><figure style="width:100%"><img src="../results/screens/sq-04-campagne.png"><figcaption>Figure 45 – Tableau de bord de la campagne</figcaption></figure></div>
+
+<!-- ======================= 8. BILAN ======================= -->
+<h1>8. Bilan : anomalies, métriques et verdict de recette</h1>
+<h2>8.1 Anomalies détectées</h2>
+<table class="small"><thead><tr><th>Réf.</th><th>Gravité</th><th>Description</th><th>Détectée par</th><th>Exigence</th><th>Statut</th></tr></thead><tbody><tr><td><b>ANO-01</b></td><td><span class="badge ko">Critique</span></td><td>Fuite de confidentialité : une réclamation privée est lisible par n’importe quel étudiant via GET /api/complaints/{id} (IDOR)</td><td>Revue de code + TI-05</td><td>EF-06</td><td><span class="badge ok">Corrigée (v1.0.1)</span></td></tr><tr><td><b>ANO-02</b></td><td><span class="badge ">Mineure</span></td><td>JwtUtils.validateJwtToken lève SignatureException au lieu de renvoyer false pour un jeton signé avec une autre clé</td><td>TU-04</td><td>ENF-01</td><td><span class="badge ok">Corrigée (v1.0.1)</span></td></tr><tr><td><b>ANO-03</b></td><td><span class="badge warn">Majeure</span></td><td>Le compteur d’échecs n’est jamais remis à zéro après expiration du verrouillage : un seul échec reverrouille le compte 15 min</td><td>Revue de code + TI-09</td><td>EF-03</td><td>Ouverte</td></tr><tr><td><b>ANO-04</b></td><td><span class="badge warn">Majeure</span></td><td>DatabaseSeeder supprime tous les événements à chaque démarrage (eventRepository.deleteAll()) : perte des événements créés par le délégué</td><td>Revue de code + TA-06</td><td>ENF-09</td><td>Ouverte</td></tr><tr><td><b>ANO-05</b></td><td><span class="badge warn">Majeure</span></td><td>Mobile : la barre latérale n’est pas repliable, débordement horizontal de 107 px sur Pixel 7</td><td>TS-07</td><td>ENF-05</td><td>Ouverte</td></tr><tr><td><b>ANO-06</b></td><td><span class="badge warn">Majeure</span></td><td>29 vulnérabilités connues dans les dépendances frontend (15 hautes, 11 modérées, 3 faibles), dont axios et react-router</td><td>TNF-02 (npm audit)</td><td>ENF-08</td><td>Ouverte</td></tr><tr><td><b>ANO-07</b></td><td><span class="badge ">Mineure</span></td><td>Dette technique : 55 erreurs ESLint, 10 violations PMD (3 catch vides, equals sans hashCode…), 8 blocs dupliqués (CPD)</td><td>TNF-03 (analyse statique)</td><td>ENF-06</td><td>Ouverte</td></tr><tr><td><b>ANO-08</b></td><td><span class="badge ">Mineure</span></td><td>Documentation : variables CLOUDINARY_* obligatoires non documentées (le backend ne démarre pas) ; port frontend annoncé 5174 au lieu de 5173</td><td>Installation (revue de la documentation)</td><td>ENF-07</td><td>Ouverte</td></tr></tbody></table>
+<h2>8.2 Métriques</h2>
+<div class="kpis">
+  <div class="kpi"><b>89 %</b><span>exigences couvertes (24/27)</span></div>
+  <div class="kpi"><b>28/33</b><span>cas de test réussis (statut final)</span></div>
+  <div class="kpi"><b>49 %</b><span>instructions backend couvertes</span></div>
+  <div class="kpi"><b>35,7 ms</b><span>p(95) sous 20 utilisateurs</span></div>
+</div>
+<table class=""><thead><tr><th>Indicateur</th><th>Valeur</th></tr></thead><tbody><tr><td>Cas de test (statut final)</td><td>28 succès · 4 échecs · 1 bloqué</td></tr><tr><td>Exécutions enregistrées dans Squash TM</td><td>36 (2 itérations)</td></tr><tr><td>Tests JUnit</td><td>52 (itération 1 : 49 réussis, 3 échecs ; itération 2 : 51 réussis, 1 ignoré)</td></tr><tr><td>Tests E2E Playwright</td><td>7 (6 réussis, 1 échec)</td></tr><tr><td>Étapes manuelles d’acceptation</td><td>14 conformes sur 14 (TA-01 à TA-05) + TA-06 en échec</td></tr><tr><td>Anomalies</td><td>8 (1 critique, 4 majeures, 3 mineures) ; 2 corrigées</td></tr><tr><td>Efficacité des techniques statiques</td><td>5 anomalies sur 8 trouvées sans exécuter le code (revue de code, PMD/ESLint, npm audit, documentation)</td></tr></tbody></table>
+<h2>8.3 Évaluation des critères de sortie</h2>
+<table class=""><thead><tr><th>Critère</th><th>Résultat</th><th>Verdict</th></tr></thead><tbody><tr><td>100 % des cas planifiés exécutés</td><td>32 exécutés + 1 bloqué (anomalie connue)</td><td><span class="badge ok">Atteint</span></td></tr><tr><td>Aucune anomalie critique ouverte</td><td>ANO-01 corrigée et re-testée</td><td><span class="badge ok">Atteint</span></td></tr><tr><td>Couverture des exigences ≥ 85 %</td><td>89 %</td><td><span class="badge ok">Atteint</span></td></tr><tr><td>Couverture des instructions ≥ 40 %</td><td>49 %</td><td><span class="badge ok">Atteint</span></td></tr></tbody></table>
+<div class="note"><b>Verdict : recette prononcée AVEC RÉSERVES.</b> Les critères de sortie sont atteints, mais quatre anomalies majeures restent ouvertes (ANO-03 à ANO-06). Elles doivent être corrigées avant une mise en production.</div>
+<h2>8.4 Recommandations</h2>
+<table class="small"><thead><tr><th>Anomalie</th><th>Correctif proposé</th></tr></thead><tbody><tr><td>ANO-03</td><td>Dans <code>AuthController</code>, remettre <code>failedLoginAttempts</code> à 0 lorsque <code>lockoutUntil</code> est dépassé, avant de compter le nouvel échec</td></tr><tr><td>ANO-04</td><td>N’insérer le calendrier initial que si la table est vide : <code>if (eventRepository.count() == 0) seedEvents();</code></td></tr><tr><td>ANO-05</td><td>Barre latérale repliable (menu « burger ») sous le point de rupture <code>md</code> de Tailwind</td></tr><tr><td>ANO-06</td><td><code>npm audit fix</code>, puis mise à jour d’axios et de react-router ; ajouter l’audit à l’intégration continue</td></tr><tr><td>ANO-07</td><td>Corriger les erreurs ESLint et PMD ; bloquer la fusion si le lint échoue</td></tr><tr><td>ANO-08</td><td>Documenter <code>CLOUDINARY_*</code> dans le README et <code>backend/.env.example</code></td></tr><tr><td>Général</td><td>Exécuter <code>mvn test</code> et Playwright à chaque pull request (GitHub Actions) pour automatiser la non-régression</td></tr></tbody></table>
+
+<!-- ======================= 9. CONCLUSION ======================= -->
+<h1>9. Conclusion</h1>
+<p>Ces ateliers ont permis de mener une démarche de test complète sur une application réelle : de l’expression des besoins jusqu’au verdict de recette. <b>Squash TM</b> a centralisé les exigences, les cas de test et les campagnes. La matrice de traçabilité montre quelles exigences sont vérifiées, et par quels tests.</p>
+<p>La combinaison des techniques s’est avérée efficace. La <b>revue de code</b> (statique) a trouvé les défauts les plus graves avant même l’exécution, et les <b>tests dynamiques</b> les ont confirmés et ont mesuré leur impact. Les tests <b>automatisés</b> (JUnit, Playwright, k6) rendent la non-régression peu coûteuse. Les tests <b>manuels</b> restent indispensables pour juger l’expérience utilisateur et explorer des comportements inattendus, comme la perte des événements au redémarrage. Enfin, le cycle <b>correction → re-test → non-régression</b> a été appliqué à l’anomalie critique de confidentialité, désormais corrigée.</p>
+
+<!-- ======================= ANNEXE ======================= -->
+<h1>10. Annexe : rejouer les tests</h1>
+<pre># 1. Infrastructure (Docker)
+docker run -d --name enigov-postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=enigov -p 5433:5432 postgres:16
+docker exec enigov-postgres psql -U postgres -c "CREATE DATABASE enigov_test;" -c "CREATE DATABASE squashtm;"
+docker network create qa-net &amp;&amp; docker network connect qa-net enigov-postgres
+docker run -d --name squash-tm --network qa-net -p 8090:8080 -e SQTM_DB_TYPE=postgresql -e SQTM_DB_HOST=enigov-postgres \
+  -e SQTM_DB_NAME=squashtm -e SQTM_DB_USERNAME=postgres -e SQTM_DB_PASSWORD=postgres \
+  -e SQUASH_RESTAPI_DISALLOWBASICAUTHENTICATION=false squashtest/squash      # admin / admin
+
+# 2. Application
+cd backend  &amp;&amp; mvn spring-boot:run          # http://localhost:8081  (backend/.env)
+cd frontend &amp;&amp; npm install &amp;&amp; npm run dev    # http://localhost:5173
+
+# 3. Tests
+cd backend &amp;&amp; mvn test                       # unitaires + intégration + rapport JaCoCo (target/site/jacoco)
+cd backend &amp;&amp; mvn pmd:pmd pmd:cpd            # analyse statique Java
+cd frontend &amp;&amp; npx eslint . --ext js,jsx     # analyse statique JavaScript
+npm audit --workspace=frontend               # dépendances vulnérables
+cd qa &amp;&amp; npm install &amp;&amp; npx playwright install chromium
+cd qa &amp;&amp; npx playwright test -c e2e/playwright.config.js        # tests système E2E
+cd qa &amp;&amp; node acceptance/run-acceptance.mjs                     # aide à l'exécution des tests d'acceptation
+docker run --rm -v ./qa/perf:/scripts grafana/k6 run /scripts/charge-api.js   # charge
+cd qa &amp;&amp; node squash/seed.mjs                                   # alimentation de Squash TM</pre>
+<table class=""><thead><tr><th>Fichier</th><th>Contenu</th></tr></thead><tbody><tr><td><code>backend/src/test/java/com/unigov/unit/</code></td><td>Tests unitaires (TU-01 à TU-04)</td></tr><tr><td><code>backend/src/test/java/com/unigov/integration/</code></td><td>Tests d’intégration (TI-01 à TI-09)</td></tr><tr><td><code>backend/src/test/resources/application-test.properties</code></td><td>Profil de test (base enigov_test)</td></tr><tr><td><code>qa/e2e/</code></td><td>Tests système Playwright (TS-01 à TS-07)</td></tr><tr><td><code>qa/acceptance/run-acceptance.mjs</code></td><td>Enregistrement des preuves des tests d’acceptation</td></tr><tr><td><code>qa/perf/charge-api.js</code></td><td>Scénario de charge k6</td></tr><tr><td><code>qa/squash/</code></td><td>Référentiel de test et script d’alimentation de Squash TM</td></tr><tr><td><code>qa/results/</code></td><td>Résultats bruts, rapports HTML et captures d’écran</td></tr></tbody></table>
+</body></html>

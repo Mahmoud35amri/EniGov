@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: com.unigov.unit.JwtUtilsTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.023 s <<< FAILURE! -- in com.unigov.unit.JwtUtilsTest
+com.unigov.unit.JwtUtilsTest.jetonSigneAvecAutreCle -- Time elapsed: 0.004 s <<< ERROR!
+io.jsonwebtoken.security.SignatureException: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:399)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parse(ImmutableJwtParser.java:148)
+	at com.unigov.security.JwtUtils.validateJwtToken(JwtUtils.java:46)
+	at com.unigov.unit.JwtUtilsTest.jetonSigneAvecAutreCle(JwtUtilsTest.java:55)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+

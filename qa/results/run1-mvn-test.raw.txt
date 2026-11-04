@@ -1,0 +1,1020 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com.unigov:unigov >--------------------------
+[INFO] Building EniGov 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/jacoco-maven-plugin/0.8.14/jacoco-maven-plugin-0.8.14.pom
+Progress (1): 870 BProgress (1): 980 BProgress (1): 3.5 kBProgress (1): 4.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/jacoco/jacoco-maven-plugin/0.8.14/jacoco-maven-plugin-0.8.14.pom (4.2 kB at 10 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.build/0.8.14/org.jacoco.build-0.8.14.pom
+Progress (1): 748 BProgress (1): 823 BProgress (1): 2.8 kBProgress (1): 4.7 kBProgress (1): 7.1 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 18 kBProgress (1): 21 kBProgress (1): 24 kBProgress (1): 25 kBProgress (1): 28 kBProgress (1): 30 kBProgress (1): 35 kBProgress (1): 41 kBProgress (1): 46 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.build/0.8.14/org.jacoco.build-0.8.14.pom (46 kB at 576 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-bom/9.9/asm-bom-9.9.pom
+Progress (1): 1.1 kBProgress (1): 1.4 kBProgress (1): 3.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-bom/9.9/asm-bom-9.9.pom (3.3 kB at 45 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/jacoco-maven-plugin/0.8.14/jacoco-maven-plugin-0.8.14.jar
+Progress (1): 0.6/57 kBProgress (1): 1.9/57 kBProgress (1): 3.3/57 kBProgress (1): 4.7/57 kBProgress (1): 6.0/57 kBProgress (1): 7.4/57 kBProgress (1): 8.8/57 kBProgress (1): 10/57 kB Progress (1): 12/57 kBProgress (1): 13/57 kBProgress (1): 14/57 kBProgress (1): 16/57 kBProgress (1): 17/57 kBProgress (1): 18/57 kBProgress (1): 20/57 kBProgress (1): 21/57 kBProgress (1): 22/57 kBProgress (1): 24/57 kBProgress (1): 24/57 kBProgress (1): 25/57 kBProgress (1): 27/57 kBProgress (1): 28/57 kBProgress (1): 30/57 kBProgress (1): 31/57 kBProgress (1): 32/57 kBProgress (1): 34/57 kBProgress (1): 35/57 kBProgress (1): 36/57 kBProgress (1): 41/57 kBProgress (1): 45/57 kBProgress (1): 49/57 kBProgress (1): 53/57 kBProgress (1): 57/57 kBProgress (1): 57 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/jacoco/jacoco-maven-plugin/0.8.14/jacoco-maven-plugin-0.8.14.jar (57 kB at 532 kB/s)
+[INFO] 
+[INFO] --- jacoco:0.8.14:prepare-agent (default) @ unigov ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.pom
+Progress (1): 812 BProgress (1): 2.4 kBProgress (1): 4.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.pom (4.1 kB at 54 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/3.2.0/file-management-3.2.0.pom
+Progress (1): 793 BProgress (1): 2.3 kBProgress (1): 4.4 kBProgress (1): 4.5 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/3.2.0/file-management-3.2.0.pom (4.5 kB at 52 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/44/maven-shared-components-44.pom
+Progress (1): 810 BProgress (1): 2.3 kBProgress (1): 3.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/44/maven-shared-components-44.pom (3.8 kB at 58 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/44/maven-parent-44.pom
+Progress (1): 708 BProgress (1): 1.9 kBProgress (1): 5.5 kBProgress (1): 9.7 kBProgress (1): 14 kB Progress (1): 19 kBProgress (1): 22 kBProgress (1): 26 kBProgress (1): 27 kBProgress (1): 31 kBProgress (1): 34 kBProgress (1): 37 kBProgress (1): 41 kBProgress (1): 44 kBProgress (1): 47 kBProgress (1): 49 kBProgress (1): 52 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/44/maven-parent-44.pom (52 kB at 594 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/34/apache-34.pom
+Progress (1): 758 BProgress (1): 2.1 kBProgress (1): 4.1 kBProgress (1): 6.1 kBProgress (1): 7.7 kBProgress (1): 12 kB Progress (1): 17 kBProgress (1): 20 kBProgress (1): 23 kBProgress (1): 24 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/34/apache-34.pom (24 kB at 307 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.12.1/junit-bom-5.12.1.pom
+Progress (1): 908 BProgress (1): 4.1 kBProgress (1): 5.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.12.1/junit-bom-5.12.1.pom (5.6 kB at 76 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.19.0/commons-io-2.19.0.pom
+Progress (1): 763 BProgress (1): 2.1 kBProgress (1): 4.7 kBProgress (1): 6.7 kBProgress (1): 8.9 kBProgress (1): 12 kB Progress (1): 14 kBProgress (1): 16 kBProgress (1): 19 kBProgress (1): 21 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.19.0/commons-io-2.19.0.pom (21 kB at 265 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/81/commons-parent-81.pom
+Progress (1): 701 BProgress (1): 1.9 kBProgress (1): 3.2 kBProgress (1): 4.7 kBProgress (1): 6.8 kBProgress (1): 9.2 kBProgress (1): 11 kB Progress (1): 12 kBProgress (1): 15 kBProgress (1): 17 kBProgress (1): 20 kBProgress (1): 22 kBProgress (1): 24 kBProgress (1): 28 kBProgress (1): 31 kBProgress (1): 32 kBProgress (1): 36 kBProgress (1): 41 kBProgress (1): 44 kBProgress (1): 46 kBProgress (1): 49 kBProgress (1): 52 kBProgress (1): 56 kBProgress (1): 58 kBProgress (1): 58 kBProgress (1): 62 kBProgress (1): 65 kBProgress (1): 69 kBProgress (1): 72 kBProgress (1): 74 kBProgress (1): 76 kBProgress (1): 78 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/81/commons-parent-81.pom (78 kB at 871 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.pom
+Progress (1): 816 BProgress (1): 2.4 kBProgress (1): 2.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.pom (2.4 kB at 27 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/15/maven-shared-components-15.pom
+Progress (1): 770 BProgress (1): 2.9 kBProgress (1): 6.5 kBProgress (1): 9.1 kBProgress (1): 9.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/15/maven-shared-components-15.pom (9.3 kB at 148 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/16/maven-parent-16.pom
+Progress (1): 742 BProgress (1): 2.0 kBProgress (1): 6.6 kBProgress (1): 11 kB Progress (1): 15 kBProgress (1): 17 kBProgress (1): 19 kBProgress (1): 23 kBProgress (1): 23 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/16/maven-parent-16.pom (23 kB at 328 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.pom
+Progress (1): 835 BProgress (1): 1.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.pom (1.4 kB at 14 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.0/doxia-1.0.pom
+Progress (1): 762 BProgress (1): 2.2 kBProgress (1): 5.7 kBProgress (1): 8.9 kBProgress (1): 9.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.0/doxia-1.0.pom (9.6 kB at 119 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/10/maven-parent-10.pom
+Progress (1): 800 BProgress (1): 2.0 kBProgress (1): 6.6 kBProgress (1): 7.7 kBProgress (1): 11 kB Progress (1): 14 kBProgress (1): 17 kBProgress (1): 23 kBProgress (1): 26 kBProgress (1): 30 kBProgress (1): 32 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/10/maven-parent-10.pom (32 kB at 381 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.agent/0.8.14/org.jacoco.agent-0.8.14.pom
+Progress (1): 884 BProgress (1): 3.5 kBProgress (1): 3.5 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.agent/0.8.14/org.jacoco.agent-0.8.14.pom (3.5 kB at 53 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.core/0.8.14/org.jacoco.core-0.8.14.pom
+Progress (1): 895 BProgress (1): 2.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.core/0.8.14/org.jacoco.core-0.8.14.pom (2.1 kB at 25 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.9/asm-9.9.pom
+Progress (1): 1.3 kBProgress (1): 2.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.9/asm-9.9.pom (2.4 kB at 34 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.9/asm-commons-9.9.pom
+Progress (1): 1.1 kBProgress (1): 2.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.9/asm-commons-9.9.pom (2.8 kB at 44 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.9/asm-tree-9.9.pom
+Progress (1): 1.1 kBProgress (1): 2.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.9/asm-tree-9.9.pom (2.6 kB at 37 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.report/0.8.14/org.jacoco.report-0.8.14.pom
+Progress (1): 898 BProgress (1): 1.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.report/0.8.14/org.jacoco.report-0.8.14.pom (1.9 kB at 26 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/3.2.0/file-management-3.2.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.19.0/commons-io-2.19.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.jar
+Progress (1): 7.4/247 kBProgress (1): 7.7/247 kBProgress (1): 24/247 kB Progress (1): 40/247 kBProgress (1): 57/247 kBProgress (1): 73/247 kBProgress (1): 90/247 kBProgress (1): 106/247 kBProgress (1): 122/247 kBProgress (1): 139/247 kBProgress (1): 155/247 kBProgress (1): 172/247 kBProgress (1): 188/247 kBProgress (1): 204/247 kBProgress (1): 221/247 kBProgress (1): 237/247 kBProgress (2): 237/247 kB | 0.6/556 kBProgress (2): 237/247 kB | 1.9/556 kBProgress (2): 237/247 kB | 3.3/556 kBProgress (2): 237/247 kB | 4.7/556 kBProgress (2): 237/247 kB | 6.0/556 kBProgress (2): 237/247 kB | 7.4/556 kBProgress (2): 237/247 kB | 8.8/556 kBProgress (2): 237/247 kB | 10/556 kB Progress (2): 237/247 kB | 12/556 kBProgress (2): 237/247 kB | 13/556 kBProgress (2): 237/247 kB | 14/556 kBProgress (2): 237/247 kB | 16/556 kBProgress (2): 237/247 kB | 17/556 kBProgress (2): 237/247 kB | 18/556 kBProgress (2): 237/247 kB | 20/556 kBProgress (2): 237/247 kB | 21/556 kBProgress (2): 237/247 kB | 22/556 kBProgress (2): 237/247 kB | 24/556 kBProgress (2): 237/247 kB | 25/556 kBProgress (2): 237/247 kB | 27/556 kBProgress (2): 237/247 kB | 28/556 kBProgress (2): 237/247 kB | 29/556 kBProgress (2): 247 kB | 29/556 kB    Progress (2): 247 kB | 30/556 kBProgress (2): 247 kB | 31/556 kBProgress (2): 247 kB | 33/556 kBProgress (2): 247 kB | 34/556 kBProgress (2): 247 kB | 36/556 kBProgress (2): 247 kB | 37/556 kBProgress (2): 247 kB | 38/556 kBProgress (2): 247 kB | 40/556 kBProgress (2): 247 kB | 41/556 kBProgress (2): 247 kB | 42/556 kBProgress (3): 247 kB | 42/556 kB | 0.6/10 kBProgress (3): 247 kB | 42/556 kB | 1.9/10 kBProgress (3): 247 kB | 42/556 kB | 3.3/10 kBProgress (3): 247 kB | 42/556 kB | 4.7/10 kBProgress (3): 247 kB | 42/556 kB | 6.0/10 kBProgress (3): 247 kB | 42/556 kB | 7.4/10 kBProgress (3): 247 kB | 42/556 kB | 8.8/10 kBProgress (3): 247 kB | 42/556 kB | 10 kB                                            Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.jar (247 kB at 1.3 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.agent/0.8.14/org.jacoco.agent-0.8.14-runtime.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.jar (10 kB at 51 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.core/0.8.14/org.jacoco.core-0.8.14.jar
+Progress (1): 44/556 kBProgress (1): 45/556 kBProgress (1): 46/556 kBProgress (1): 48/556 kBProgress (1): 49/556 kBProgress (1): 51/556 kBProgress (1): 52/556 kBProgress (1): 53/556 kBProgress (1): 55/556 kBProgress (1): 59/556 kBProgress (2): 59/556 kB | 0.6/11 kBProgress (2): 59/556 kB | 1.9/11 kBProgress (2): 59/556 kB | 3.3/11 kBProgress (2): 59/556 kB | 4.7/11 kBProgress (2): 59/556 kB | 6.0/11 kBProgress (2): 59/556 kB | 7.4/11 kBProgress (2): 59/556 kB | 7.7/11 kBProgress (2): 59/556 kB | 9.1/11 kBProgress (2): 59/556 kB | 10/11 kB Progress (2): 59/556 kB | 11 kB   Progress (2): 61/556 kB | 11 kBProgress (2): 66/556 kB | 11 kBProgress (2): 70/556 kB | 11 kB                               Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.jar (11 kB at 50 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.9/asm-9.9.jar
+Progress (1): 74/556 kBProgress (1): 78/556 kBProgress (1): 83/556 kBProgress (1): 87/556 kBProgress (2): 87/556 kB | 0.6/26 kBProgress (2): 87/556 kB | 1.9/26 kBProgress (2): 87/556 kB | 3.3/26 kBProgress (2): 87/556 kB | 4.7/26 kBProgress (2): 87/556 kB | 6.0/26 kBProgress (2): 87/556 kB | 7.4/26 kBProgress (2): 91/556 kB | 7.4/26 kBProgress (2): 91/556 kB | 8.8/26 kBProgress (2): 91/556 kB | 10/26 kB Progress (2): 91/556 kB | 12/26 kBProgress (2): 91/556 kB | 13/26 kBProgress (2): 91/556 kB | 14/26 kBProgress (2): 91/556 kB | 16/26 kBProgress (2): 91/556 kB | 17/26 kBProgress (2): 91/556 kB | 18/26 kBProgress (2): 91/556 kB | 20/26 kBProgress (2): 91/556 kB | 21/26 kBProgress (2): 91/556 kB | 22/26 kBProgress (2): 91/556 kB | 24/26 kBProgress (2): 91/556 kB | 25/26 kBProgress (2): 91/556 kB | 26 kB                                  Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/3.2.0/file-management-3.2.0.jar (26 kB at 97 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.9/asm-commons-9.9.jar
+Progress (2): 91/556 kB | 7.7/230 kBProgress (2): 91/556 kB | 7.7/230 kBProgress (2): 95/556 kB | 7.7/230 kBProgress (2): 100/556 kB | 7.7/230 kBProgress (2): 100/556 kB | 24/230 kB Progress (2): 104/556 kB | 24/230 kBProgress (2): 108/556 kB | 24/230 kBProgress (2): 112/556 kB | 24/230 kBProgress (2): 116/556 kB | 24/230 kBProgress (2): 121/556 kB | 24/230 kBProgress (2): 125/556 kB | 24/230 kBProgress (2): 127/556 kB | 24/230 kBProgress (2): 131/556 kB | 24/230 kBProgress (2): 135/556 kB | 24/230 kBProgress (2): 140/556 kB | 24/230 kBProgress (2): 144/556 kB | 24/230 kBProgress (2): 148/556 kB | 24/230 kBProgress (2): 152/556 kB | 24/230 kBProgress (2): 157/556 kB | 24/230 kBProgress (2): 161/556 kB | 24/230 kBProgress (2): 165/556 kB | 24/230 kBProgress (2): 169/556 kB | 24/230 kBProgress (2): 173/556 kB | 24/230 kBProgress (2): 178/556 kB | 24/230 kBProgress (2): 182/556 kB | 24/230 kBProgress (2): 186/556 kB | 24/230 kBProgress (2): 190/556 kB | 24/230 kBProgress (2): 195/556 kB | 24/230 kBProgress (2): 199/556 kB | 24/230 kBProgress (2): 203/556 kB | 24/230 kBProgress (2): 207/556 kB | 24/230 kBProgress (2): 212/556 kB | 24/230 kBProgress (2): 216/556 kB | 24/230 kBProgress (2): 220/556 kB | 24/230 kBProgress (3): 220/556 kB | 24/230 kB | 0.9/126 kBProgress (3): 220/556 kB | 24/230 kB | 2.3/126 kBProgress (3): 220/556 kB | 24/230 kB | 3.6/126 kBProgress (3): 220/556 kB | 24/230 kB | 5.0/126 kBProgress (3): 220/556 kB | 24/230 kB | 6.4/126 kBProgress (3): 220/556 kB | 24/230 kB | 7.7/126 kBProgress (3): 220/556 kB | 24/230 kB | 9.1/126 kBProgress (3): 220/556 kB | 24/230 kB | 10/126 kB Progress (3): 220/556 kB | 24/230 kB | 12/126 kBProgress (3): 220/556 kB | 24/230 kB | 13/126 kBProgress (3): 220/556 kB | 24/230 kB | 15/126 kBProgress (3): 220/556 kB | 24/230 kB | 16/126 kBProgress (3): 220/556 kB | 24/230 kB | 17/126 kBProgress (3): 220/556 kB | 24/230 kB | 19/126 kBProgress (3): 220/556 kB | 24/230 kB | 20/126 kBProgress (3): 220/556 kB | 24/230 kB | 21/126 kBProgress (3): 220/556 kB | 24/230 kB | 23/126 kBProgress (3): 220/556 kB | 24/230 kB | 24/126 kBProgress (3): 220/556 kB | 24/230 kB | 25/126 kBProgress (3): 220/556 kB | 24/230 kB | 27/126 kBProgress (3): 220/556 kB | 24/230 kB | 28/126 kBProgress (3): 220/556 kB | 24/230 kB | 30/126 kBProgress (3): 220/556 kB | 24/230 kB | 31/126 kBProgress (3): 220/556 kB | 24/230 kB | 32/126 kBProgress (3): 220/556 kB | 24/230 kB | 34/126 kBProgress (3): 220/556 kB | 24/230 kB | 35/126 kBProgress (3): 220/556 kB | 24/230 kB | 36/126 kBProgress (3): 220/556 kB | 24/230 kB | 38/126 kBProgress (3): 220/556 kB | 24/230 kB | 39/126 kBProgress (3): 220/556 kB | 24/230 kB | 41/126 kBProgress (3): 220/556 kB | 24/230 kB | 42/126 kBProgress (3): 220/556 kB | 24/230 kB | 46/126 kBProgress (3): 220/556 kB | 24/230 kB | 50/126 kBProgress (3): 220/556 kB | 24/230 kB | 55/126 kBProgress (3): 220/556 kB | 24/230 kB | 57/126 kBProgress (3): 220/556 kB | 24/230 kB | 61/126 kBProgress (3): 236/556 kB | 24/230 kB | 61/126 kBProgress (3): 253/556 kB | 24/230 kB | 61/126 kBProgress (3): 258/556 kB | 24/230 kB | 61/126 kBProgress (3): 274/556 kB | 24/230 kB | 61/126 kBProgress (3): 291/556 kB | 24/230 kB | 61/126 kBProgress (3): 307/556 kB | 24/230 kB | 61/126 kBProgress (3): 307/556 kB | 40/230 kB | 61/126 kBProgress (3): 307/556 kB | 57/230 kB | 61/126 kBProgress (3): 307/556 kB | 73/230 kB | 61/126 kBProgress (3): 307/556 kB | 90/230 kB | 61/126 kBProgress (3): 307/556 kB | 106/230 kB | 61/126 kBProgress (3): 307/556 kB | 122/230 kB | 61/126 kBProgress (3): 307/556 kB | 139/230 kB | 61/126 kBProgress (3): 307/556 kB | 155/230 kB | 61/126 kBProgress (3): 307/556 kB | 164/230 kB | 61/126 kBProgress (3): 307/556 kB | 180/230 kB | 61/126 kBProgress (3): 307/556 kB | 197/230 kB | 61/126 kBProgress (3): 307/556 kB | 213/230 kB | 61/126 kBProgress (3): 307/556 kB | 229/230 kB | 61/126 kBProgress (3): 307/556 kB | 230 kB | 61/126 kB    Progress (4): 307/556 kB | 230 kB | 61/126 kB | 1.4/307 kBProgress (4): 307/556 kB | 230 kB | 61/126 kB | 2.7/307 kBProgress (4): 307/556 kB | 230 kB | 61/126 kB | 4.1/307 kBProgress (4): 307/556 kB | 230 kB | 61/126 kB | 5.5/307 kBProgress (4): 307/556 kB | 230 kB | 61/126 kB | 6.8/307 kBProgress (4): 307/556 kB | 230 kB | 61/126 kB | 8.2/307 kBProgress (4): 307/556 kB | 230 kB | 61/126 kB | 9.6/307 kBProgress (4): 307/556 kB | 230 kB | 61/126 kB | 11/307 kB Progress (4): 307/556 kB | 230 kB | 61/126 kB | 12/307 kBProgress (4): 307/556 kB | 230 kB | 61/126 kB | 14/307 kBProgress (4): 307/556 kB | 230 kB | 61/126 kB | 15/307 kBProgress (4): 307/556 kB | 230 kB | 61/126 kB | 16/307 kBProgress (4): 307/556 kB | 230 kB | 61/126 kB | 18/307 kBProgress (4): 307/556 kB | 230 kB | 61/126 kB | 19/307 kBProgress (4): 307/556 kB | 230 kB | 61/126 kB | 21/307 kBProgress (4): 307/556 kB | 230 kB | 61/126 kB | 22/307 kBProgress (4): 307/556 kB | 230 kB | 61/126 kB | 23/307 kBProgress (4): 307/556 kB | 230 kB | 61/126 kB | 25/307 kBProgress (4): 307/556 kB | 230 kB | 61/126 kB | 26/307 kBProgress (4): 307/556 kB | 230 kB | 61/126 kB | 27/307 kBProgress (4): 307/556 kB | 230 kB | 61/126 kB | 29/307 kBProgress (4): 307/556 kB | 230 kB | 61/126 kB | 30/307 kBProgress (4): 307/556 kB | 230 kB | 61/126 kB | 31/307 kB                                                         Downloaded from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.core/0.8.14/org.jacoco.core-0.8.14.jar (230 kB at 600 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.9/asm-tree-9.9.jar
+Progress (3): 307/556 kB | 61/126 kB | 33/307 kBProgress (3): 307/556 kB | 61/126 kB | 34/307 kBProgress (3): 307/556 kB | 61/126 kB | 36/307 kBProgress (3): 307/556 kB | 61/126 kB | 37/307 kBProgress (3): 307/556 kB | 61/126 kB | 38/307 kBProgress (3): 307/556 kB | 61/126 kB | 40/307 kBProgress (3): 307/556 kB | 61/126 kB | 41/307 kBProgress (3): 307/556 kB | 61/126 kB | 42/307 kBProgress (3): 307/556 kB | 61/126 kB | 44/307 kBProgress (3): 307/556 kB | 61/126 kB | 48/307 kBProgress (3): 307/556 kB | 61/126 kB | 52/307 kBProgress (3): 307/556 kB | 61/126 kB | 56/307 kBProgress (3): 307/556 kB | 61/126 kB | 57/307 kBProgress (3): 307/556 kB | 61/126 kB | 62/307 kBProgress (3): 324/556 kB | 61/126 kB | 62/307 kBProgress (3): 340/556 kB | 61/126 kB | 62/307 kBProgress (3): 356/556 kB | 61/126 kB | 62/307 kBProgress (4): 356/556 kB | 61/126 kB | 62/307 kB | 0.9/74 kBProgress (4): 356/556 kB | 61/126 kB | 62/307 kB | 2.3/74 kBProgress (4): 356/556 kB | 61/126 kB | 62/307 kB | 3.6/74 kBProgress (4): 356/556 kB | 61/126 kB | 62/307 kB | 5.0/74 kBProgress (4): 356/556 kB | 61/126 kB | 62/307 kB | 6.4/74 kBProgress (4): 373/556 kB | 61/126 kB | 62/307 kB | 6.4/74 kBProgress (4): 389/556 kB | 61/126 kB | 62/307 kB | 6.4/74 kBProgress (4): 389/556 kB | 65/126 kB | 62/307 kB | 6.4/74 kBProgress (4): 389/556 kB | 65/126 kB | 62/307 kB | 7.7/74 kBProgress (4): 389/556 kB | 65/126 kB | 62/307 kB | 9.1/74 kBProgress (4): 389/556 kB | 70/126 kB | 62/307 kB | 9.1/74 kBProgress (4): 389/556 kB | 70/126 kB | 62/307 kB | 10/74 kB Progress (4): 389/556 kB | 70/126 kB | 62/307 kB | 12/74 kBProgress (4): 389/556 kB | 70/126 kB | 62/307 kB | 13/74 kBProgress (4): 389/556 kB | 70/126 kB | 62/307 kB | 15/74 kBProgress (4): 389/556 kB | 70/126 kB | 62/307 kB | 16/74 kBProgress (4): 389/556 kB | 70/126 kB | 62/307 kB | 17/74 kBProgress (4): 389/556 kB | 70/126 kB | 62/307 kB | 19/74 kBProgress (4): 389/556 kB | 70/126 kB | 62/307 kB | 20/74 kBProgress (4): 389/556 kB | 70/126 kB | 62/307 kB | 21/74 kBProgress (4): 389/556 kB | 70/126 kB | 62/307 kB | 23/74 kBProgress (4): 389/556 kB | 70/126 kB | 62/307 kB | 24/74 kBProgress (4): 389/556 kB | 70/126 kB | 62/307 kB | 25/74 kBProgress (4): 389/556 kB | 70/126 kB | 62/307 kB | 27/74 kBProgress (4): 389/556 kB | 70/126 kB | 62/307 kB | 28/74 kBProgress (4): 389/556 kB | 70/126 kB | 62/307 kB | 32/74 kBProgress (4): 389/556 kB | 74/126 kB | 62/307 kB | 32/74 kBProgress (4): 389/556 kB | 78/126 kB | 62/307 kB | 32/74 kBProgress (4): 389/556 kB | 78/126 kB | 62/307 kB | 37/74 kBProgress (4): 389/556 kB | 82/126 kB | 62/307 kB | 37/74 kBProgress (4): 389/556 kB | 82/126 kB | 62/307 kB | 41/74 kBProgress (4): 389/556 kB | 86/126 kB | 62/307 kB | 41/74 kBProgress (4): 389/556 kB | 91/126 kB | 62/307 kB | 41/74 kBProgress (4): 389/556 kB | 91/126 kB | 62/307 kB | 45/74 kBProgress (4): 389/556 kB | 95/126 kB | 62/307 kB | 45/74 kBProgress (4): 406/556 kB | 95/126 kB | 62/307 kB | 45/74 kBProgress (4): 406/556 kB | 95/126 kB | 62/307 kB | 49/74 kBProgress (4): 406/556 kB | 99/126 kB | 62/307 kB | 49/74 kBProgress (4): 406/556 kB | 99/126 kB | 62/307 kB | 54/74 kBProgress (4): 406/556 kB | 103/126 kB | 62/307 kB | 54/74 kBProgress (4): 406/556 kB | 103/126 kB | 62/307 kB | 58/74 kBProgress (4): 406/556 kB | 108/126 kB | 62/307 kB | 58/74 kBProgress (4): 406/556 kB | 108/126 kB | 62/307 kB | 62/74 kBProgress (4): 406/556 kB | 112/126 kB | 62/307 kB | 62/74 kBProgress (4): 406/556 kB | 116/126 kB | 62/307 kB | 62/74 kBProgress (4): 406/556 kB | 120/126 kB | 62/307 kB | 62/74 kBProgress (4): 406/556 kB | 122/126 kB | 62/307 kB | 62/74 kBProgress (4): 406/556 kB | 126 kB | 62/307 kB | 62/74 kB    Progress (4): 406/556 kB | 126 kB | 66/307 kB | 62/74 kBProgress (4): 406/556 kB | 126 kB | 70/307 kB | 62/74 kBProgress (4): 406/556 kB | 126 kB | 74/307 kB | 62/74 kBProgress (4): 406/556 kB | 126 kB | 78/307 kB | 62/74 kBProgress (4): 406/556 kB | 126 kB | 83/307 kB | 62/74 kBProgress (4): 406/556 kB | 126 kB | 87/307 kB | 62/74 kBProgress (4): 406/556 kB | 126 kB | 91/307 kB | 62/74 kBProgress (4): 406/556 kB | 126 kB | 95/307 kB | 62/74 kBProgress (4): 406/556 kB | 126 kB | 100/307 kB | 62/74 kBProgress (4): 406/556 kB | 126 kB | 104/307 kB | 62/74 kB                                                         Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.9/asm-9.9.jar (126 kB at 278 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.report/0.8.14/org.jacoco.report-0.8.14.jar
+Progress (3): 422/556 kB | 104/307 kB | 62/74 kBProgress (3): 438/556 kB | 104/307 kB | 62/74 kBProgress (3): 455/556 kB | 104/307 kB | 62/74 kBProgress (3): 471/556 kB | 104/307 kB | 62/74 kBProgress (3): 487/556 kB | 104/307 kB | 62/74 kBProgress (3): 487/556 kB | 104/307 kB | 66/74 kBProgress (3): 487/556 kB | 104/307 kB | 71/74 kBProgress (3): 487/556 kB | 104/307 kB | 74 kB   Progress (4): 487/556 kB | 104/307 kB | 74 kB | 7.7/52 kBProgress (4): 487/556 kB | 104/307 kB | 74 kB | 7.7/52 kB                                                         Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.9/asm-commons-9.9.jar (74 kB at 147 kB/s)
+Progress (3): 487/556 kB | 104/307 kB | 24/52 kBProgress (3): 487/556 kB | 104/307 kB | 40/52 kBProgress (3): 487/556 kB | 104/307 kB | 52 kB                                                Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.9/asm-tree-9.9.jar (52 kB at 100 kB/s)
+Progress (2): 487/556 kB | 108/307 kBProgress (2): 487/556 kB | 112/307 kBProgress (2): 487/556 kB | 117/307 kBProgress (2): 487/556 kB | 121/307 kBProgress (2): 487/556 kB | 123/307 kBProgress (2): 487/556 kB | 127/307 kBProgress (2): 487/556 kB | 131/307 kBProgress (2): 487/556 kB | 136/307 kBProgress (2): 487/556 kB | 140/307 kBProgress (2): 487/556 kB | 144/307 kBProgress (2): 487/556 kB | 148/307 kBProgress (2): 487/556 kB | 152/307 kBProgress (2): 487/556 kB | 157/307 kBProgress (2): 487/556 kB | 161/307 kBProgress (2): 487/556 kB | 165/307 kBProgress (2): 487/556 kB | 169/307 kBProgress (2): 487/556 kB | 174/307 kBProgress (2): 487/556 kB | 178/307 kBProgress (2): 487/556 kB | 182/307 kBProgress (2): 487/556 kB | 186/307 kBProgress (2): 487/556 kB | 188/307 kBProgress (2): 487/556 kB | 193/307 kBProgress (2): 487/556 kB | 197/307 kBProgress (2): 487/556 kB | 201/307 kBProgress (2): 487/556 kB | 205/307 kBProgress (2): 504/556 kB | 205/307 kBProgress (2): 520/556 kB | 205/307 kBProgress (2): 537/556 kB | 205/307 kBProgress (2): 553/556 kB | 205/307 kBProgress (2): 556 kB | 205/307 kB    Progress (2): 556 kB | 222/307 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.19.0/commons-io-2.19.0.jar (556 kB at 988 kB/s)
+Progress (1): 238/307 kBProgress (1): 254/307 kBProgress (1): 271/307 kBProgress (2): 271/307 kB | 3.8/131 kBProgress (2): 271/307 kB | 8.0/131 kBProgress (2): 271/307 kB | 12/131 kB Progress (2): 271/307 kB | 16/131 kBProgress (2): 271/307 kB | 21/131 kBProgress (2): 271/307 kB | 24/131 kBProgress (2): 271/307 kB | 28/131 kBProgress (2): 271/307 kB | 33/131 kBProgress (2): 271/307 kB | 37/131 kBProgress (2): 271/307 kB | 41/131 kBProgress (2): 271/307 kB | 45/131 kBProgress (2): 271/307 kB | 49/131 kBProgress (2): 271/307 kB | 54/131 kBProgress (2): 271/307 kB | 58/131 kBProgress (2): 271/307 kB | 62/131 kBProgress (2): 271/307 kB | 66/131 kBProgress (2): 271/307 kB | 71/131 kBProgress (2): 271/307 kB | 75/131 kBProgress (2): 271/307 kB | 79/131 kBProgress (2): 287/307 kB | 79/131 kBProgress (2): 304/307 kB | 79/131 kBProgress (2): 307 kB | 79/131 kB                                    Downloaded from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.agent/0.8.14/org.jacoco.agent-0.8.14-runtime.jar (307 kB at 494 kB/s)
+Progress (1): 95/131 kBProgress (1): 112/131 kBProgress (1): 128/131 kBProgress (1): 131 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.report/0.8.14/org.jacoco.report-0.8.14.jar (131 kB at 198 kB/s)
+[INFO] argLine set to -javaagent:C:\\Users\\ASUS\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.14\\org.jacoco.agent-0.8.14-runtime.jar=destfile=C:\\Users\\ASUS\\desktop\\EniGov\\backend\\target\\jacoco.exec -Dnet.bytebuddy.experimental=true
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ unigov ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ unigov ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ unigov ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ unigov ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 9 source files with javac [debug parameters release 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ unigov ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.1.2/surefire-junit-platform-3.1.2.pom
+Progress (1): 847 BProgress (1): 3.5 kBProgress (1): 4.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.1.2/surefire-junit-platform-3.1.2.pom (4.7 kB at 64 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.1.2/surefire-providers-3.1.2.pom
+Progress (1): 849 BProgress (1): 2.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.1.2/surefire-providers-3.1.2.pom (2.6 kB at 40 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.1.2/common-java5-3.1.2.pom
+Progress (1): 849 BProgress (1): 2.6 kBProgress (1): 2.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.1.2/common-java5-3.1.2.pom (2.8 kB at 41 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.9.2/junit-platform-launcher-1.9.2.pom
+Progress (1): 966 BProgress (1): 3.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.9.2/junit-platform-launcher-1.9.2.pom (3.0 kB at 37 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.pom
+Progress (1): 957 BProgress (1): 3.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.pom (3.2 kB at 44 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.pom
+Progress (1): 971 BProgress (1): 2.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.pom (2.8 kB at 40 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.1.2/surefire-junit-platform-3.1.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.1.2/common-java5-3.1.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.9.2/junit-platform-launcher-1.9.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar
+Progress (1): 7.4/169 kBProgress (1): 7.7/169 kBProgress (1): 24/169 kB Progress (2): 24/169 kB | 7.4/103 kBProgress (2): 24/169 kB | 16/103 kB Progress (2): 24/169 kB | 32/103 kBProgress (3): 24/169 kB | 32/103 kB | 3.4/189 kBProgress (3): 24/169 kB | 48/103 kB | 3.4/189 kBProgress (3): 24/169 kB | 65/103 kB | 3.4/189 kBProgress (3): 24/169 kB | 65/103 kB | 7.6/189 kBProgress (3): 24/169 kB | 65/103 kB | 12/189 kB Progress (3): 40/169 kB | 65/103 kB | 12/189 kBProgress (4): 40/169 kB | 65/103 kB | 12/189 kB | 7.4/18 kBProgress (4): 40/169 kB | 65/103 kB | 12/189 kB | 7.7/18 kBProgress (4): 40/169 kB | 65/103 kB | 16/189 kB | 7.7/18 kBProgress (4): 57/169 kB | 65/103 kB | 16/189 kB | 7.7/18 kBProgress (4): 57/169 kB | 65/103 kB | 20/189 kB | 7.7/18 kBProgress (5): 57/169 kB | 65/103 kB | 20/189 kB | 7.7/18 kB | 7.4/27 kBProgress (5): 57/169 kB | 65/103 kB | 20/189 kB | 7.7/18 kB | 7.7/27 kBProgress (5): 57/169 kB | 65/103 kB | 20/189 kB | 7.7/18 kB | 24/27 kB Progress (5): 57/169 kB | 65/103 kB | 20/189 kB | 7.7/18 kB | 27 kB                                                                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.1.2/surefire-junit-platform-3.1.2.jar (27 kB at 214 kB/s)
+Progress (4): 57/169 kB | 65/103 kB | 25/189 kB | 7.7/18 kBProgress (4): 57/169 kB | 65/103 kB | 29/189 kB | 7.7/18 kBProgress (4): 73/169 kB | 65/103 kB | 29/189 kB | 7.7/18 kBProgress (4): 73/169 kB | 65/103 kB | 33/189 kB | 7.7/18 kBProgress (4): 90/169 kB | 65/103 kB | 33/189 kB | 7.7/18 kBProgress (4): 90/169 kB | 65/103 kB | 37/189 kB | 7.7/18 kBProgress (4): 90/169 kB | 65/103 kB | 41/189 kB | 7.7/18 kBProgress (4): 90/169 kB | 65/103 kB | 46/189 kB | 7.7/18 kBProgress (4): 90/169 kB | 65/103 kB | 50/189 kB | 7.7/18 kBProgress (4): 106/169 kB | 65/103 kB | 50/189 kB | 7.7/18 kBProgress (4): 106/169 kB | 65/103 kB | 54/189 kB | 7.7/18 kBProgress (4): 106/169 kB | 65/103 kB | 57/189 kB | 7.7/18 kBProgress (4): 122/169 kB | 65/103 kB | 57/189 kB | 7.7/18 kBProgress (4): 122/169 kB | 65/103 kB | 62/189 kB | 7.7/18 kBProgress (4): 122/169 kB | 65/103 kB | 66/189 kB | 7.7/18 kBProgress (4): 122/169 kB | 65/103 kB | 70/189 kB | 7.7/18 kBProgress (4): 139/169 kB | 65/103 kB | 70/189 kB | 7.7/18 kBProgress (4): 139/169 kB | 65/103 kB | 74/189 kB | 7.7/18 kBProgress (4): 139/169 kB | 65/103 kB | 78/189 kB | 7.7/18 kBProgress (4): 155/169 kB | 65/103 kB | 78/189 kB | 7.7/18 kBProgress (4): 155/169 kB | 65/103 kB | 83/189 kB | 7.7/18 kBProgress (4): 169 kB | 65/103 kB | 83/189 kB | 7.7/18 kB                                                            Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.9.2/junit-platform-launcher-1.9.2.jar (169 kB at 1.1 MB/s)
+Progress (3): 65/103 kB | 87/189 kB | 7.7/18 kBProgress (3): 65/103 kB | 91/189 kB | 7.7/18 kBProgress (3): 65/103 kB | 95/189 kB | 7.7/18 kBProgress (3): 65/103 kB | 100/189 kB | 7.7/18 kBProgress (3): 65/103 kB | 104/189 kB | 7.7/18 kBProgress (3): 65/103 kB | 108/189 kB | 7.7/18 kBProgress (3): 65/103 kB | 112/189 kB | 7.7/18 kBProgress (3): 81/103 kB | 112/189 kB | 7.7/18 kBProgress (3): 81/103 kB | 112/189 kB | 18 kB                                                Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.1.2/common-java5-3.1.2.jar (18 kB at 92 kB/s)
+Progress (2): 81/103 kB | 117/189 kBProgress (2): 81/103 kB | 121/189 kBProgress (2): 81/103 kB | 123/189 kBProgress (2): 81/103 kB | 139/189 kBProgress (2): 81/103 kB | 156/189 kBProgress (2): 81/103 kB | 172/189 kBProgress (2): 81/103 kB | 188/189 kBProgress (2): 97/103 kB | 188/189 kBProgress (2): 97/103 kB | 189 kB    Progress (2): 103 kB | 189 kB                                Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar (103 kB at 424 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar (189 kB at 769 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.10.1/junit-platform-launcher-1.10.1.pom
+Progress (1): 967 BProgress (1): 3.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.10.1/junit-platform-launcher-1.10.1.pom (3.0 kB at 40 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.10.1/junit-platform-launcher-1.10.1.jar
+Progress (1): 7.4/184 kBProgress (1): 16/184 kB Progress (1): 32/184 kBProgress (1): 48/184 kBProgress (1): 65/184 kBProgress (1): 81/184 kBProgress (1): 97/184 kBProgress (1): 114/184 kBProgress (1): 130/184 kBProgress (1): 147/184 kBProgress (1): 163/184 kBProgress (1): 179/184 kBProgress (1): 184 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.10.1/junit-platform-launcher-1.10.1.jar (184 kB at 1.1 MB/s)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.unigov.integration.AuthIntegrationTest
+22:44:48.592 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.unigov.integration.AuthIntegrationTest]: AuthIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:44:48.810 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.unigov.UniGovApplication for test class com.unigov.integration.AuthIntegrationTest
+22:44:49.130 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+2026-11-04T22:44:49.466+01:00  INFO 12344 --- [enigov] [           main] c.u.integration.AuthIntegrationTest      : Starting AuthIntegrationTest using Java 25 with PID 12344 (started by ASUS in C:\Users\ASUS\Desktop\EniGov\backend)
+2026-11-04T22:44:49.469+01:00  INFO 12344 --- [enigov] [           main] c.u.integration.AuthIntegrationTest      : The following 1 profile is active: "test"
+2026-11-04T22:44:50.387+01:00  INFO 12344 --- [enigov] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-04T22:44:50.474+01:00  INFO 12344 --- [enigov] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 9 JPA repository interfaces.
+2026-11-04T22:44:52.522+01:00  INFO 12344 --- [enigov] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-04T22:44:52.568+01:00  INFO 12344 --- [enigov] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-04T22:44:52.798+01:00  INFO 12344 --- [enigov] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1a2d79bf
+2026-11-04T22:44:52.801+01:00  INFO 12344 --- [enigov] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-04T22:44:52.843+01:00  WARN 12344 --- [enigov] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-04T22:44:54.782+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.782+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "announcement_target_filieres" does not exist, skipping
+2026-11-04T22:44:54.783+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.783+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "announcement_target_promotions" does not exist, skipping
+2026-11-04T22:44:54.784+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.784+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "complaint_downvotes" does not exist, skipping
+2026-11-04T22:44:54.786+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.786+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "complaint_upvotes" does not exist, skipping
+2026-11-04T22:44:54.787+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.787+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "poll_option_voters" does not exist, skipping
+2026-11-04T22:44:54.788+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.788+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "poll_options" does not exist, skipping
+2026-11-04T22:44:54.789+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.790+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "poll_target_filieres" does not exist, skipping
+2026-11-04T22:44:54.791+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.791+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "poll_target_promotions" does not exist, skipping
+2026-11-04T22:44:54.792+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.792+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "announcement_target_filieres" does not exist, skipping
+2026-11-04T22:44:54.794+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.794+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "announcement_target_promotions" does not exist, skipping
+2026-11-04T22:44:54.795+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.795+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "announcements" does not exist, skipping
+2026-11-04T22:44:54.796+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.796+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "complaint_downvotes" does not exist, skipping
+2026-11-04T22:44:54.797+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.797+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "complaint_upvotes" does not exist, skipping
+2026-11-04T22:44:54.799+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.799+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "complaints" does not exist, skipping
+2026-11-04T22:44:54.800+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.800+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "decisions" does not exist, skipping
+2026-11-04T22:44:54.801+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.801+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "events" does not exist, skipping
+2026-11-04T22:44:54.802+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.802+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "messages" does not exist, skipping
+2026-11-04T22:44:54.803+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.803+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "notifications" does not exist, skipping
+2026-11-04T22:44:54.804+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.804+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "poll_option_voters" does not exist, skipping
+2026-11-04T22:44:54.805+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.805+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "poll_options" does not exist, skipping
+2026-11-04T22:44:54.806+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.807+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "poll_target_filieres" does not exist, skipping
+2026-11-04T22:44:54.808+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.808+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "poll_target_promotions" does not exist, skipping
+2026-11-04T22:44:54.809+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.809+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "polls" does not exist, skipping
+2026-11-04T22:44:54.810+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.810+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "regulations" does not exist, skipping
+2026-11-04T22:44:54.811+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:44:54.811+01:00  WARN 12344 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "users" does not exist, skipping
+2026-11-04T22:44:54.959+01:00  INFO 12344 --- [enigov] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-04T22:44:55.736+01:00  INFO 12344 --- [enigov] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-04T22:44:56.763+01:00  INFO 12344 --- [enigov] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@543e126, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@133d23d8, org.springframework.security.web.context.SecurityContextHolderFilter@4fbc8540, org.springframework.security.web.header.HeaderWriterFilter@3d327a68, org.springframework.web.filter.CorsFilter@18a60105, org.springframework.security.web.authentication.logout.LogoutFilter@34a4b76d, com.unigov.security.AuthTokenFilter@3c2ad88b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@75788eda, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2bd7b278, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45ab021e, org.springframework.security.web.session.SessionManagementFilter@70eede42, org.springframework.security.web.access.ExceptionTranslationFilter@376442a1, org.springframework.security.web.access.intercept.AuthorizationFilter@2814608a]
+2026-11-04T22:44:57.227+01:00  INFO 12344 --- [enigov] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-11-04T22:44:57.228+01:00  INFO 12344 --- [enigov] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-11-04T22:44:57.228+01:00  INFO 12344 --- [enigov] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-11-04T22:44:57.239+01:00  INFO 12344 --- [enigov] [           main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-11-04T22:44:57.241+01:00  INFO 12344 --- [enigov] [           main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@38f16a58]]
+2026-11-04T22:44:57.241+01:00  INFO 12344 --- [enigov] [           main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-11-04T22:44:57.247+01:00  INFO 12344 --- [enigov] [           main] c.u.integration.AuthIntegrationTest      : Started AuthIntegrationTest in 8.134 seconds (process running for 9.73)
+>>> SEEDER : Calendrier mis à jour avec les périodes (Début/Fin).
+2026-11-04T22:44:57.535+01:00  INFO 12344 --- [enigov] [           main] com.unigov.DataInitializer               : Compte délégué créé : delegue@enicar.ucar.tn
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/auth/signup
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"121"]
+             Body = {"email":"relock.d123e749@enicar.ucar.tn","password":"Etudiant2026","fullName":"Etudiant relock.d123e749@enicar.ucar.tn"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.unigov.controller.AuthController
+           Method = com.unigov.controller.AuthController#registerUser(SignupRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"message":"Inscription réussie ! Un email de vérification a été envoyé à relock.d123e749@enicar.ucar.tn"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/auth/verify-email
+       Parameters = {token=[b05a8800-fd72-4bb3-8d4e-69dd2709a6ee]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.unigov.controller.AuthController
+           Method = com.unigov.controller.AuthController#verifyEmail(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"message":"Email vérifié avec succès ! Vous pouvez maintenant vous connecter."}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/auth/signin
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"64"]
+             Body = {"email":"relock.d123e749@enicar.ucar.tn","password":"Mauvais1"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.unigov.controller.AuthController
+           Method = com.unigov.controller.AuthController#authenticateUser(LoginRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 401
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"message":"Mot de passe incorrect. 4 tentative(s) restante(s)."}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/auth/signin
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"64"]
+             Body = {"email":"relock.d123e749@enicar.ucar.tn","password":"Mauvais2"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.unigov.controller.AuthController
+           Method = com.unigov.controller.AuthController#authenticateUser(LoginRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 401
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"message":"Mot de passe incorrect. 3 tentative(s) restante(s)."}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/auth/signin
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"64"]
+             Body = {"email":"relock.d123e749@enicar.ucar.tn","password":"Mauvais3"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.unigov.controller.AuthController
+           Method = com.unigov.controller.AuthController#authenticateUser(LoginRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 401
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"message":"Mot de passe incorrect. 2 tentative(s) restante(s)."}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/auth/signin
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"64"]
+             Body = {"email":"relock.d123e749@enicar.ucar.tn","password":"Mauvais4"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.unigov.controller.AuthController
+           Method = com.unigov.controller.AuthController#authenticateUser(LoginRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 401
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"message":"Mot de passe incorrect. 1 tentative(s) restante(s)."}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/auth/signin
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"64"]
+             Body = {"email":"relock.d123e749@enicar.ucar.tn","password":"Mauvais5"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.unigov.controller.AuthController
+           Method = com.unigov.controller.AuthController#authenticateUser(LoginRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 429
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"message":"Trop de tentatives. Compte verrouillé pour 15 minutes."}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/auth/signin
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"67"]
+             Body = {"email":"relock.d123e749@enicar.ucar.tn","password":"EncoreFaux1"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.unigov.controller.AuthController
+           Method = com.unigov.controller.AuthController#authenticateUser(LoginRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 429
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"message":"Trop de tentatives. Compte verrouillé pour 15 minutes."}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+[ERROR] Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 11.03 s <<< FAILURE! -- in com.unigov.integration.AuthIntegrationTest
+[ERROR] com.unigov.integration.AuthIntegrationTest.compteurRemisAZeroApresExpiration -- Time elapsed: 0.540 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Le compte est reverrouillé dès le 1er échec : le compteur n'est jamais remis à zéro ==> expected: <401> but was: <429>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at com.unigov.integration.AuthIntegrationTest.compteurRemisAZeroApresExpiration(AuthIntegrationTest.java:96)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+[INFO] Running com.unigov.integration.ComplaintPollIntegrationTest
+2026-11-04T22:44:59.402+01:00  INFO 12344 --- [enigov] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.unigov.integration.ComplaintPollIntegrationTest]: ComplaintPollIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-04T22:44:59.405+01:00  INFO 12344 --- [enigov] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.unigov.UniGovApplication for test class com.unigov.integration.ComplaintPollIntegrationTest
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/auth/signup
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"111"]
+             Body = {"email":"a.a74f96d3@enicar.ucar.tn","password":"Etudiant2026","fullName":"Etudiant a.a74f96d3@enicar.ucar.tn"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.unigov.controller.AuthController
+           Method = com.unigov.controller.AuthController#registerUser(SignupRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"message":"Inscription réussie ! Un email de vérification a été envoyé à a.a74f96d3@enicar.ucar.tn"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/auth/verify-email
+       Parameters = {token=[209ee4c6-f922-4629-a13b-7641b104b4b7]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.unigov.controller.AuthController
+           Method = com.unigov.controller.AuthController#verifyEmail(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"message":"Email vérifié avec succès ! Vous pouvez maintenant vous connecter."}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/auth/signin
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"63"]
+             Body = {"email":"a.a74f96d3@enicar.ucar.tn","password":"Etudiant2026"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.unigov.controller.AuthController
+           Method = com.unigov.controller.AuthController#authenticateUser(LoginRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhLmE3NGY5NmQzIiwiaWF0IjoxNzkzODI4NzAwLCJleHAiOjE3OTM5MTUxMDB9.9yI2IsXs3n9kv0m7ltIF7Bs_OrIaLK7oWmbENH_0qrs","type":"Bearer","id":"899c6de5-9f87-4792-b294-2cdd3cb1752a","username":"a.a74f96d3","email":"a.a74f96d3@enicar.ucar.tn","role":"ROLE_ETUDIANT","fullName":"Etudiant a.a74f96d3@enicar.ucar.tn","profilePhoto":null,"filiere":null,"promotion":null}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/auth/signup
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"111"]
+             Body = {"email":"b.d2c3d8db@enicar.ucar.tn","password":"Etudiant2026","fullName":"Etudiant b.d2c3d8db@enicar.ucar.tn"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.unigov.controller.AuthController
+           Method = com.unigov.controller.AuthController#registerUser(SignupRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"message":"Inscription réussie ! Un email de vérification a été envoyé à b.d2c3d8db@enicar.ucar.tn"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/auth/verify-email
+       Parameters = {token=[aed3ced9-a027-4ae2-984d-024a68f2a064]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.unigov.controller.AuthController
+           Method = com.unigov.controller.AuthController#verifyEmail(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"message":"Email vérifié avec succès ! Vous pouvez maintenant vous connecter."}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/auth/signin
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"63"]
+             Body = {"email":"b.d2c3d8db@enicar.ucar.tn","password":"Etudiant2026"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.unigov.controller.AuthController
+           Method = com.unigov.controller.AuthController#authenticateUser(LoginRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiLmQyYzNkOGRiIiwiaWF0IjoxNzkzODI4NzAwLCJleHAiOjE3OTM5MTUxMDB9.ge_XVnojfAWZG6wII7gGWuJbWuUWTwow1Zq5D2VxYW4","type":"Bearer","id":"8c4cee31-ca6d-4384-a5d6-843fa47dab0a","username":"b.d2c3d8db","email":"b.d2c3d8db@enicar.ucar.tn","role":"ROLE_ETUDIANT","fullName":"Etudiant b.d2c3d8db@enicar.ucar.tn","profilePhoto":null,"filiere":null,"promotion":null}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/complaints
+       Parameters = {title=[Privée par id], description=[Description de test], isPublic=[false]}
+          Headers = [Content-Type:"multipart/form-data;charset=UTF-8", Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhLmE3NGY5NmQzIiwiaWF0IjoxNzkzODI4NzAwLCJleHAiOjE3OTM5MTUxMDB9.9yI2IsXs3n9kv0m7ltIF7Bs_OrIaLK7oWmbENH_0qrs"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.unigov.controller.ComplaintController
+           Method = com.unigov.controller.ComplaintController#createComplaint(String, String, boolean, MultipartFile, Principal)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"id":"e1215105-75a8-4c6b-8810-11ff80fb5bea","title":"Privée par id","description":"Description de test","status":"PENDING","studentId":"899c6de5-9f87-4792-b294-2cdd3cb1752a","studentName":"Etudiant a.a74f96d3@enicar.ucar.tn","delegateResponse":null,"attachmentPath":null,"upvoteCount":0,"downvoteCount":0,"voteScore":0,"userVote":null,"createdAt":"2026-11-04T22:45:00.2612903","updatedAt":null,"public":false}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/complaints/e1215105-75a8-4c6b-8810-11ff80fb5bea
+       Parameters = {}
+          Headers = [Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiLmQyYzNkOGRiIiwiaWF0IjoxNzkzODI4NzAwLCJleHAiOjE3OTM5MTUxMDB9.ge_XVnojfAWZG6wII7gGWuJbWuUWTwow1Zq5D2VxYW4"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.unigov.controller.ComplaintController
+           Method = com.unigov.controller.ComplaintController#getComplaint(String, Principal)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"id":"e1215105-75a8-4c6b-8810-11ff80fb5bea","title":"Privée par id","description":"Description de test","status":"PENDING","studentId":"899c6de5-9f87-4792-b294-2cdd3cb1752a","studentName":"Etudiant a.a74f96d3@enicar.ucar.tn","delegateResponse":null,"attachmentPath":null,"upvoteCount":0,"downvoteCount":0,"voteScore":0,"userVote":null,"createdAt":"2026-11-04T22:45:00.26129","updatedAt":null,"public":false}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+[ERROR] Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.894 s <<< FAILURE! -- in com.unigov.integration.ComplaintPollIntegrationTest
+[ERROR] com.unigov.integration.ComplaintPollIntegrationTest.priveeInaccessibleParId -- Time elapsed: 0.464 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<403> but was:<200>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$9(StatusResultMatchers.java:637)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.unigov.integration.ComplaintPollIntegrationTest.priveeInaccessibleParId(ComplaintPollIntegrationTest.java:51)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+[INFO] Running com.unigov.integration.SecurityIntegrationTest
+2026-11-04T22:45:01.297+01:00  INFO 12344 --- [enigov] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.unigov.integration.SecurityIntegrationTest]: SecurityIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-04T22:45:01.299+01:00  INFO 12344 --- [enigov] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.unigov.UniGovApplication for test class com.unigov.integration.SecurityIntegrationTest
+2026-11-04T22:45:02.065+01:00 ERROR 12344 --- [enigov] [           main] com.unigov.security.AuthTokenFilter      : Cannot set user authentication: {}
+
+io.jsonwebtoken.security.SignatureException: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:399) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parse(ImmutableJwtParser.java:148) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at com.unigov.security.JwtUtils.validateJwtToken(JwtUtils.java:46) ~[classes/:na]
+	at com.unigov.security.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:36) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:225) ~[spring-security-config-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201) ~[spring-test-6.1.3.jar:6.1.3]
+	at com.unigov.integration.SecurityIntegrationTest.jetonFalsifie(SecurityIntegrationTest.java:41) ~[test-classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728) ~[junit-platform-commons-1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56) ~[surefire-junit-platform-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184) ~[surefire-junit-platform-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148) ~[surefire-junit-platform-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122) ~[surefire-junit-platform-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) ~[surefire-booter-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) ~[surefire-booter-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) ~[surefire-booter-3.1.2.jar:3.1.2]
+
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.589 s -- in com.unigov.integration.SecurityIntegrationTest
+[INFO] Running com.unigov.UniGovApplicationTests
+2026-11-04T22:45:02.888+01:00  INFO 12344 --- [enigov] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.unigov.UniGovApplicationTests]: UniGovApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-04T22:45:02.894+01:00  INFO 12344 --- [enigov] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.unigov.UniGovApplication for test class com.unigov.UniGovApplicationTests
+2026-11-04T22:45:02.897+01:00  INFO 12344 --- [enigov] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2026-11-04T22:45:02.900+01:00  INFO 12344 --- [enigov] [           main] m.p.springdotenv.DotenvPropertySource    : Initialized Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+2026-11-04T22:45:02.924+01:00  INFO 12344 --- [enigov] [           main] com.unigov.UniGovApplicationTests        : Starting UniGovApplicationTests using Java 25 with PID 12344 (started by ASUS in C:\Users\ASUS\Desktop\EniGov\backend)
+2026-11-04T22:45:02.925+01:00  INFO 12344 --- [enigov] [           main] com.unigov.UniGovApplicationTests        : The following 1 profile is active: "test"
+2026-11-04T22:45:03.121+01:00  INFO 12344 --- [enigov] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-04T22:45:03.139+01:00  INFO 12344 --- [enigov] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 9 JPA repository interfaces.
+2026-11-04T22:45:03.224+01:00  INFO 12344 --- [enigov] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-04T22:45:03.225+01:00  INFO 12344 --- [enigov] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-11-04T22:45:03.237+01:00  INFO 12344 --- [enigov] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@76e1ad79
+2026-11-04T22:45:03.238+01:00  INFO 12344 --- [enigov] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-11-04T22:45:03.240+01:00  WARN 12344 --- [enigov] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-04T22:45:03.523+01:00  INFO 12344 --- [enigov] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-04T22:45:03.883+01:00  INFO 12344 --- [enigov] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@585fdde5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f4b24d0, org.springframework.security.web.context.SecurityContextHolderFilter@74af849d, org.springframework.security.web.header.HeaderWriterFilter@79134f68, org.springframework.web.filter.CorsFilter@182da47c, org.springframework.security.web.authentication.logout.LogoutFilter@103ee9af, com.unigov.security.AuthTokenFilter@51dbd4bd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e0a6398, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d010d3e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@766ce2f5, org.springframework.security.web.session.SessionManagementFilter@4f2f44cb, org.springframework.security.web.access.ExceptionTranslationFilter@78a846e6, org.springframework.security.web.access.intercept.AuthorizationFilter@2878caf6]
+2026-11-04T22:45:03.974+01:00  INFO 12344 --- [enigov] [           main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-11-04T22:45:03.974+01:00  INFO 12344 --- [enigov] [           main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7f51520b]]
+2026-11-04T22:45:03.974+01:00  INFO 12344 --- [enigov] [           main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-11-04T22:45:03.977+01:00  INFO 12344 --- [enigov] [           main] com.unigov.UniGovApplicationTests        : Started UniGovApplicationTests in 1.081 seconds (process running for 16.46)
+>>> SEEDER : Calendrier mis à jour avec les périodes (Début/Fin).
+2026-11-04T22:45:04.066+01:00  INFO 12344 --- [enigov] [           main] com.unigov.DataInitializer               : Compte délégué créé : delegue@enicar.ucar.tn
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.183 s -- in com.unigov.UniGovApplicationTests
+[INFO] Running com.unigov.unit.ComplaintServiceTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.303 s -- in com.unigov.unit.ComplaintServiceTest
+[INFO] Running com.unigov.unit.JwtUtilsTest
+2026-11-04T22:45:04.393+01:00 ERROR 12344 --- [enigov] [           main] com.unigov.security.JwtUtils             : Invalid JWT token: Malformed JWT JSON: ??
+2026-11-04T22:45:04.395+01:00 ERROR 12344 --- [enigov] [           main] com.unigov.security.JwtUtils             : JWT claims string is empty: JWT String argument cannot be null or empty.
+2026-11-04T22:45:04.400+01:00 ERROR 12344 --- [enigov] [           main] com.unigov.security.JwtUtils             : JWT token is expired: JWT expired at 2026-11-04T21:45:03Z. Current time: 2026-11-04T21:45:04Z, a difference of 1398 milliseconds.  Allowed clock skew: 0 milliseconds.
+[ERROR] Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.023 s <<< FAILURE! -- in com.unigov.unit.JwtUtilsTest
+[ERROR] com.unigov.unit.JwtUtilsTest.jetonSigneAvecAutreCle -- Time elapsed: 0.004 s <<< ERROR!
+io.jsonwebtoken.security.SignatureException: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:399)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parse(ImmutableJwtParser.java:148)
+	at com.unigov.security.JwtUtils.validateJwtToken(JwtUtils.java:46)
+	at com.unigov.unit.JwtUtilsTest.jetonSigneAvecAutreCle(JwtUtilsTest.java:55)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+[INFO] Running com.unigov.unit.PollServiceTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 s -- in com.unigov.unit.PollServiceTest
+[INFO] Running com.unigov.unit.PollVisibilityTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s -- in com.unigov.unit.PollVisibilityTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   AuthIntegrationTest.compteurRemisAZeroApresExpiration:96 Le compte est reverrouillé dès le 1er échec : le compteur n'est jamais remis à zéro ==> expected: <401> but was: <429>
+[ERROR]   ComplaintPollIntegrationTest.priveeInaccessibleParId:51 Status expected:<403> but was:<200>
+[ERROR] Errors: 
+[ERROR]   JwtUtilsTest.jetonSigneAvecAutreCle:55 » Signature JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+[INFO] 
+[ERROR] Tests run: 52, Failures: 2, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  24.663 s
+[INFO] Finished at: 2026-11-04T22:45:05+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project unigov: There are test failures.
+[ERROR] 
+[ERROR] Please refer to C:\Users\ASUS\desktop\EniGov\backend\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

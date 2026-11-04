@@ -1,0 +1,166 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com.unigov:unigov >--------------------------
+[INFO] Building EniGov 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.14:prepare-agent (default) @ unigov ---
+[INFO] argLine set to -javaagent:C:\\Users\\ASUS\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.14\\org.jacoco.agent-0.8.14-runtime.jar=destfile=C:\\Users\\ASUS\\desktop\\EniGov\\backend\\target\\jacoco.exec -Dnet.bytebuddy.experimental=true
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ unigov ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ unigov ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 66 source files with javac [debug parameters release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ unigov ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ unigov ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 9 source files with javac [debug parameters release 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ unigov ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.unigov.integration.AuthIntegrationTest
+22:45:51.975 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.unigov.integration.AuthIntegrationTest]: AuthIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:45:52.124 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.unigov.UniGovApplication for test class com.unigov.integration.AuthIntegrationTest
+22:45:52.343 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+2026-11-04T22:45:52.673+01:00  INFO 14180 --- [enigov] [           main] c.u.integration.AuthIntegrationTest      : Starting AuthIntegrationTest using Java 25 with PID 14180 (started by ASUS in C:\Users\ASUS\Desktop\EniGov\backend)
+2026-11-04T22:45:52.676+01:00  INFO 14180 --- [enigov] [           main] c.u.integration.AuthIntegrationTest      : The following 1 profile is active: "test"
+2026-11-04T22:45:53.657+01:00  INFO 14180 --- [enigov] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-04T22:45:53.735+01:00  INFO 14180 --- [enigov] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 9 JPA repository interfaces.
+2026-11-04T22:45:55.959+01:00  INFO 14180 --- [enigov] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-04T22:45:55.993+01:00  INFO 14180 --- [enigov] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-04T22:45:56.204+01:00  INFO 14180 --- [enigov] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@74cc8c55
+2026-11-04T22:45:56.205+01:00  INFO 14180 --- [enigov] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-04T22:45:56.248+01:00  WARN 14180 --- [enigov] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-04T22:45:57.550+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.551+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "announcement_target_filieres" does not exist, skipping
+2026-11-04T22:45:57.553+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.553+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "announcement_target_promotions" does not exist, skipping
+2026-11-04T22:45:57.555+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.556+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "complaint_downvotes" does not exist, skipping
+2026-11-04T22:45:57.557+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.557+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "complaint_upvotes" does not exist, skipping
+2026-11-04T22:45:57.558+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.559+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "poll_option_voters" does not exist, skipping
+2026-11-04T22:45:57.561+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.561+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "poll_options" does not exist, skipping
+2026-11-04T22:45:57.562+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.562+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "poll_target_filieres" does not exist, skipping
+2026-11-04T22:45:57.563+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.563+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "poll_target_promotions" does not exist, skipping
+2026-11-04T22:45:57.564+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.564+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "announcement_target_filieres" does not exist, skipping
+2026-11-04T22:45:57.566+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.566+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "announcement_target_promotions" does not exist, skipping
+2026-11-04T22:45:57.567+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.567+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "announcements" does not exist, skipping
+2026-11-04T22:45:57.568+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.569+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "complaint_downvotes" does not exist, skipping
+2026-11-04T22:45:57.570+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.576+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "complaint_upvotes" does not exist, skipping
+2026-11-04T22:45:57.577+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.577+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "complaints" does not exist, skipping
+2026-11-04T22:45:57.578+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.578+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "decisions" does not exist, skipping
+2026-11-04T22:45:57.579+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.579+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "events" does not exist, skipping
+2026-11-04T22:45:57.580+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.580+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "messages" does not exist, skipping
+2026-11-04T22:45:57.581+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.581+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "notifications" does not exist, skipping
+2026-11-04T22:45:57.582+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.582+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "poll_option_voters" does not exist, skipping
+2026-11-04T22:45:57.583+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.583+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "poll_options" does not exist, skipping
+2026-11-04T22:45:57.584+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.584+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "poll_target_filieres" does not exist, skipping
+2026-11-04T22:45:57.584+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.584+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "poll_target_promotions" does not exist, skipping
+2026-11-04T22:45:57.586+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.586+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "polls" does not exist, skipping
+2026-11-04T22:45:57.587+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.587+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "regulations" does not exist, skipping
+2026-11-04T22:45:57.588+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-11-04T22:45:57.588+01:00  WARN 14180 --- [enigov] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "users" does not exist, skipping
+2026-11-04T22:45:57.973+01:00  INFO 14180 --- [enigov] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-04T22:45:58.651+01:00  INFO 14180 --- [enigov] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-04T22:45:59.866+01:00  INFO 14180 --- [enigov] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5159969e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f7df3f0, org.springframework.security.web.context.SecurityContextHolderFilter@28bdf017, org.springframework.security.web.header.HeaderWriterFilter@7239cb6e, org.springframework.web.filter.CorsFilter@4d4e1369, org.springframework.security.web.authentication.logout.LogoutFilter@5ffb815c, com.unigov.security.AuthTokenFilter@7ff832ee, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7924355d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@772f5fbd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2df4d038, org.springframework.security.web.session.SessionManagementFilter@5965c432, org.springframework.security.web.access.ExceptionTranslationFilter@4a7449fa, org.springframework.security.web.access.intercept.AuthorizationFilter@37f4baac]
+2026-11-04T22:46:00.259+01:00  INFO 14180 --- [enigov] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-11-04T22:46:00.259+01:00  INFO 14180 --- [enigov] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-11-04T22:46:00.260+01:00  INFO 14180 --- [enigov] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-11-04T22:46:00.271+01:00  INFO 14180 --- [enigov] [           main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-11-04T22:46:00.272+01:00  INFO 14180 --- [enigov] [           main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5ddead43]]
+2026-11-04T22:46:00.272+01:00  INFO 14180 --- [enigov] [           main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-11-04T22:46:00.278+01:00  INFO 14180 --- [enigov] [           main] c.u.integration.AuthIntegrationTest      : Started AuthIntegrationTest in 7.951 seconds (process running for 9.35)
+2026-11-04T22:46:00.516+01:00  INFO 14180 --- [enigov] [           main] com.unigov.DataInitializer               : Compte délégué créé : delegue@enicar.ucar.tn
+>>> SEEDER : Calendrier mis à jour avec les périodes (Début/Fin).
+[WARNING] Tests run: 11, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 10.11 s -- in com.unigov.integration.AuthIntegrationTest
+[INFO] Running com.unigov.integration.ComplaintPollIntegrationTest
+2026-11-04T22:46:01.884+01:00  INFO 14180 --- [enigov] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.unigov.integration.ComplaintPollIntegrationTest]: ComplaintPollIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-04T22:46:01.887+01:00  INFO 14180 --- [enigov] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.unigov.UniGovApplication for test class com.unigov.integration.ComplaintPollIntegrationTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.038 s -- in com.unigov.integration.ComplaintPollIntegrationTest
+[INFO] Running com.unigov.integration.SecurityIntegrationTest
+2026-11-04T22:46:03.924+01:00  INFO 14180 --- [enigov] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.unigov.integration.SecurityIntegrationTest]: SecurityIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-04T22:46:03.926+01:00  INFO 14180 --- [enigov] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.unigov.UniGovApplication for test class com.unigov.integration.SecurityIntegrationTest
+2026-11-04T22:46:04.707+01:00 ERROR 14180 --- [enigov] [           main] com.unigov.security.JwtUtils             : Invalid JWT signature: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.695 s -- in com.unigov.integration.SecurityIntegrationTest
+[INFO] Running com.unigov.UniGovApplicationTests
+2026-11-04T22:46:05.619+01:00  INFO 14180 --- [enigov] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.unigov.UniGovApplicationTests]: UniGovApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-04T22:46:05.625+01:00  INFO 14180 --- [enigov] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.unigov.UniGovApplication for test class com.unigov.UniGovApplicationTests
+2026-11-04T22:46:05.628+01:00  INFO 14180 --- [enigov] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2026-11-04T22:46:05.631+01:00  INFO 14180 --- [enigov] [           main] m.p.springdotenv.DotenvPropertySource    : Initialized Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+2026-11-04T22:46:05.650+01:00  INFO 14180 --- [enigov] [           main] com.unigov.UniGovApplicationTests        : Starting UniGovApplicationTests using Java 25 with PID 14180 (started by ASUS in C:\Users\ASUS\Desktop\EniGov\backend)
+2026-11-04T22:46:05.650+01:00  INFO 14180 --- [enigov] [           main] com.unigov.UniGovApplicationTests        : The following 1 profile is active: "test"
+2026-11-04T22:46:05.822+01:00  INFO 14180 --- [enigov] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-04T22:46:05.837+01:00  INFO 14180 --- [enigov] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 9 JPA repository interfaces.
+2026-11-04T22:46:05.926+01:00  INFO 14180 --- [enigov] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-04T22:46:05.927+01:00  INFO 14180 --- [enigov] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-11-04T22:46:05.943+01:00  INFO 14180 --- [enigov] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@3a347f0f
+2026-11-04T22:46:05.943+01:00  INFO 14180 --- [enigov] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-11-04T22:46:05.946+01:00  WARN 14180 --- [enigov] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-04T22:46:06.815+01:00  INFO 14180 --- [enigov] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-04T22:46:07.159+01:00  INFO 14180 --- [enigov] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7378990a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a044c8e, org.springframework.security.web.context.SecurityContextHolderFilter@4f2360c3, org.springframework.security.web.header.HeaderWriterFilter@1b17ff4, org.springframework.web.filter.CorsFilter@3420e9b5, org.springframework.security.web.authentication.logout.LogoutFilter@7ab066a5, com.unigov.security.AuthTokenFilter@70a890aa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b636bf5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31a7fdb2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@250b97bc, org.springframework.security.web.session.SessionManagementFilter@4d9a4c6c, org.springframework.security.web.access.ExceptionTranslationFilter@6c8316e4, org.springframework.security.web.access.intercept.AuthorizationFilter@5468ba4f]
+2026-11-04T22:46:07.283+01:00  INFO 14180 --- [enigov] [           main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-11-04T22:46:07.283+01:00  INFO 14180 --- [enigov] [           main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@53481a02]]
+2026-11-04T22:46:07.283+01:00  INFO 14180 --- [enigov] [           main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-11-04T22:46:07.287+01:00  INFO 14180 --- [enigov] [           main] com.unigov.UniGovApplicationTests        : Started UniGovApplicationTests in 1.659 seconds (process running for 16.358)
+>>> SEEDER : Calendrier mis à jour avec les périodes (Début/Fin).
+2026-11-04T22:46:07.395+01:00  INFO 14180 --- [enigov] [           main] com.unigov.DataInitializer               : Compte délégué créé : delegue@enicar.ucar.tn
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.783 s -- in com.unigov.UniGovApplicationTests
+[INFO] Running com.unigov.unit.ComplaintServiceTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.334 s -- in com.unigov.unit.ComplaintServiceTest
+[INFO] Running com.unigov.unit.JwtUtilsTest
+2026-11-04T22:46:07.748+01:00 ERROR 14180 --- [enigov] [           main] com.unigov.security.JwtUtils             : Invalid JWT signature: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2026-11-04T22:46:07.750+01:00 ERROR 14180 --- [enigov] [           main] com.unigov.security.JwtUtils             : Invalid JWT token: Malformed JWT JSON: ??
+2026-11-04T22:46:07.753+01:00 ERROR 14180 --- [enigov] [           main] com.unigov.security.JwtUtils             : JWT claims string is empty: JWT String argument cannot be null or empty.
+2026-11-04T22:46:07.758+01:00 ERROR 14180 --- [enigov] [           main] com.unigov.security.JwtUtils             : JWT token is expired: JWT expired at 2026-11-04T21:46:06Z. Current time: 2026-11-04T21:46:07Z, a difference of 1757 milliseconds.  Allowed clock skew: 0 milliseconds.
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s -- in com.unigov.unit.JwtUtilsTest
+[INFO] Running com.unigov.unit.PollServiceTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.128 s -- in com.unigov.unit.PollServiceTest
+[INFO] Running com.unigov.unit.PollVisibilityTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s -- in com.unigov.unit.PollVisibilityTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 52, Failures: 0, Errors: 0, Skipped: 1
+[INFO] 
+[INFO] 
+[INFO] --- jacoco:0.8.14:report (report) @ unigov ---
+[INFO] Loading execution data file C:\Users\ASUS\desktop\EniGov\backend\target\jacoco.exec
+[INFO] Analyzed bundle 'EniGov' with 85 classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  22.739 s
+[INFO] Finished at: 2026-11-04T22:46:09+01:00
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,594 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "-c",
+      "e2e/playwright.config.js"
+    ],
+    "configFile": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\playwright.config.js",
+    "rootDir": "C:/Users/ASUS/Desktop/EniGov/qa/e2e/specs",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\global-setup.js",
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/ASUS/Desktop/EniGov/qa/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium-desktop",
+        "name": "chromium-desktop",
+        "testDir": "C:/Users/ASUS/Desktop/EniGov/qa/e2e/specs",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "C:/Users/ASUS/Desktop/EniGov/qa/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium-mobile",
+        "name": "chromium-mobile",
+        "testDir": "C:/Users/ASUS/Desktop/EniGov/qa/e2e/specs",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": {},
+        "outputDir": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium-desktop",
+        "testDir": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\specs",
+        "snapshotDir": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\specs",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 45000,
+        "use": {
+          "baseURL": "http://localhost:5173",
+          "locale": "fr-FR",
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium-desktop"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium-mobile",
+        "testDir": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\specs",
+        "snapshotDir": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\specs",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 45000,
+        "use": {
+          "baseURL": "http://localhost:5173",
+          "locale": "fr-FR",
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Mobile Safari/537.36",
+          "viewport": {
+            "width": 412,
+            "height": 839
+          },
+          "screen": {
+            "width": 412,
+            "height": 915
+          },
+          "deviceScaleFactor": 2.625,
+          "isMobile": true,
+          "hasTouch": true,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium-mobile"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "../results/playwright-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "../results/playwright.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "enigov.spec.js",
+      "file": "enigov.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TS-01 Connexion du délégué et affichage du tableau de bord",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [
+                {
+                  "type": "serial",
+                  "location": {
+                    "file": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\specs\\enigov.spec.js",
+                    "line": 0,
+                    "column": 0
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1517,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-04T22:30:37.870Z",
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\specs\\enigov.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "721225038e072bf5cb2f-0344042a24cb5b012082",
+          "file": "enigov.spec.js",
+          "line": 23,
+          "column": 1
+        },
+        {
+          "title": "TS-02 Connexion refusée avec un mauvais mot de passe",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [
+                {
+                  "type": "serial",
+                  "location": {
+                    "file": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\specs\\enigov.spec.js",
+                    "line": 0,
+                    "column": 0
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1350,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-04T22:30:39.484Z",
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\specs\\enigov.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "721225038e072bf5cb2f-5f02821810d688a0dcb2",
+          "file": "enigov.spec.js",
+          "line": 31,
+          "column": 1
+        },
+        {
+          "title": "TS-03 Le délégué publie une annonce, visible par un étudiant",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [
+                {
+                  "type": "serial",
+                  "location": {
+                    "file": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\specs\\enigov.spec.js",
+                    "line": 0,
+                    "column": 0
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3099,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-04T22:30:40.844Z",
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\specs\\enigov.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "721225038e072bf5cb2f-315b35bf91f79a894922",
+          "file": "enigov.spec.js",
+          "line": 38,
+          "column": 1
+        },
+        {
+          "title": "TS-04 Parcours réclamation : création par l’étudiant, traitement par le délégué",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [
+                {
+                  "type": "serial",
+                  "location": {
+                    "file": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\specs\\enigov.spec.js",
+                    "line": 0,
+                    "column": 0
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4592,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-04T22:30:43.948Z",
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\specs\\enigov.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "721225038e072bf5cb2f-c24fafc2ba7f01768406",
+          "file": "enigov.spec.js",
+          "line": 58,
+          "column": 1
+        },
+        {
+          "title": "TS-05 Sondage : création par le délégué et vote d’un étudiant",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [
+                {
+                  "type": "serial",
+                  "location": {
+                    "file": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\specs\\enigov.spec.js",
+                    "line": 0,
+                    "column": 0
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2859,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-04T22:30:48.547Z",
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\specs\\enigov.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "721225038e072bf5cb2f-a67128d1be6e107c8a62",
+          "file": "enigov.spec.js",
+          "line": 90,
+          "column": 1
+        },
+        {
+          "title": "TS-06 Contrôle d’accès : un étudiant ne peut pas ouvrir la page Étudiants",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [
+                {
+                  "type": "serial",
+                  "location": {
+                    "file": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\specs\\enigov.spec.js",
+                    "line": 0,
+                    "column": 0
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium-desktop",
+              "projectName": "chromium-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1462,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-04T22:30:51.413Z",
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\specs\\enigov.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "721225038e072bf5cb2f-fbdd27c5ac799b5f6c4d",
+          "file": "enigov.spec.js",
+          "line": 110,
+          "column": 1
+        },
+        {
+          "title": "TS-07 @mobile Affichage responsive sur smartphone (Pixel 7)",
+          "ok": false,
+          "tags": [
+            "mobile"
+          ],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [
+                {
+                  "type": "serial",
+                  "location": {
+                    "file": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\specs\\enigov.spec.js",
+                    "line": 0,
+                    "column": 0
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium-mobile",
+              "projectName": "chromium-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3445,
+                  "error": {
+                    "message": "Error: aucun défilement horizontal (largeur en trop, px)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m0\u001b[39m\nReceived:    \u001b[31m107\u001b[39m",
+                    "stack": "Error: aucun défilement horizontal (largeur en trop, px)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m0\u001b[39m\nReceived:    \u001b[31m107\u001b[39m\n    at C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\specs\\enigov.spec.js:128:76",
+                    "location": {
+                      "file": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\specs\\enigov.spec.js",
+                      "column": 76,
+                      "line": 128
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 126 |\u001b[39m   \u001b[36mawait\u001b[39m shot(page\u001b[33m,\u001b[39m \u001b[32m'e2e-ts07-mobile-accueil'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 127 |\u001b[39m   \u001b[36mconst\u001b[39m debordement \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(() \u001b[33m=>\u001b[39m document\u001b[33m.\u001b[39mdocumentElement\u001b[33m.\u001b[39mscrollWidth \u001b[33m-\u001b[39m window\u001b[33m.\u001b[39minnerWidth)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 128 |\u001b[39m   expect(debordement\u001b[33m,\u001b[39m \u001b[32m'aucun défilement horizontal (largeur en trop, px)'\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 129 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 130 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\specs\\enigov.spec.js",
+                        "column": 76,
+                        "line": 128
+                      },
+                      "message": "Error: aucun défilement horizontal (largeur en trop, px)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m0\u001b[39m\nReceived:    \u001b[31m107\u001b[39m\n\n  126 |   await shot(page, 'e2e-ts07-mobile-accueil');\n  127 |   const debordement = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);\n> 128 |   expect(debordement, 'aucun défilement horizontal (largeur en trop, px)').toBeLessThanOrEqual(0);\n      |                                                                            ^\n  129 | });\n  130 |\n    at C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\specs\\enigov.spec.js:128:76"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-04T22:30:53.338Z",
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\specs\\enigov.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\test-results\\enigov-TS-07-mobile-Affich-f4508-ive-sur-smartphone-Pixel-7--chromium-mobile\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\test-results\\enigov-TS-07-mobile-Affich-f4508-ive-sur-smartphone-Pixel-7--chromium-mobile\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\test-results\\enigov-TS-07-mobile-Affich-f4508-ive-sur-smartphone-Pixel-7--chromium-mobile\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\ASUS\\Desktop\\EniGov\\qa\\e2e\\specs\\enigov.spec.js",
+                    "column": 76,
+                    "line": 128
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "721225038e072bf5cb2f-86d49f604a34459a79dd",
+          "file": "enigov.spec.js",
+          "line": 119,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-04T22:30:37.132Z",
+    "duration": 19903.91,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

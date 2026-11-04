@@ -1,0 +1,128 @@
+[
+  {
+    "tc": "TA-01",
+    "numero": 1,
+    "action": "Ouvrir /register et s’inscrire avec une adresse @gmail.com",
+    "attendu": "Inscription refusée : seuls les e-mails @enicar.ucar.tn sont acceptés",
+    "statut": "SUCCESS",
+    "capture": "ta01-1-domaine-refuse.png",
+    "observe": "Conforme au résultat attendu"
+  },
+  {
+    "tc": "TA-01",
+    "numero": 2,
+    "action": "Saisir une adresse valide avec un mot de passe faible « motdepasse »",
+    "attendu": "Indicateur « Faible — min. 8 caractères, 1 majuscule, 1 chiffre » et bouton S’inscrire désactivé",
+    "statut": "SUCCESS",
+    "capture": "ta01-2-mdp-faible.png",
+    "observe": "Conforme au résultat attendu"
+  },
+  {
+    "tc": "TA-01",
+    "numero": 3,
+    "action": "Saisir le mot de passe « Etudiant2026 » et valider",
+    "attendu": "Message « Vérifiez votre email ! » affiché",
+    "statut": "SUCCESS",
+    "capture": "ta01-3-inscription-ok.png",
+    "observe": "Conforme au résultat attendu"
+  },
+  {
+    "tc": "TA-01",
+    "numero": 4,
+    "action": "Tenter de se connecter avant d’avoir cliqué sur le lien de vérification",
+    "attendu": "Connexion refusée : e-mail non vérifié",
+    "statut": "SUCCESS",
+    "capture": "ta01-4-email-non-verifie.png",
+    "observe": "Conforme au résultat attendu"
+  },
+  {
+    "tc": "TA-02",
+    "numero": 1,
+    "action": "Amira crée une réclamation PUBLIQUE « Wi-Fi instable au bloc B »",
+    "attendu": "Réclamation créée, statut « En attente », badge « Publique »",
+    "statut": "SUCCESS",
+    "capture": "ta02-1-reclamation-publique.png",
+    "observe": "Conforme au résultat attendu"
+  },
+  {
+    "tc": "TA-02",
+    "numero": 2,
+    "action": "Youssef ouvre l’onglet « Publiques » et vote pour (pouce levé)",
+    "attendu": "La réclamation est visible avec le nom de l’auteur ; score = 1",
+    "statut": "SUCCESS",
+    "capture": "ta02-2-vote-pour.png",
+    "observe": "Conforme au résultat attendu"
+  },
+  {
+    "tc": "TA-02",
+    "numero": 3,
+    "action": "Youssef clique à nouveau sur le pouce levé",
+    "attendu": "Le vote est annulé (bascule) ; score = 0",
+    "statut": "SUCCESS",
+    "capture": "ta02-3-vote-annule.png",
+    "observe": "Conforme au résultat attendu"
+  },
+  {
+    "tc": "TA-03",
+    "numero": 1,
+    "action": "Youssef ouvre Messagerie et clique sur « Nouveau message »",
+    "attendu": "La liste de contacts ne propose que le délégué (pas les autres étudiants)",
+    "statut": "SUCCESS",
+    "capture": "ta03-1-contacts.png",
+    "observe": "Conforme au résultat attendu"
+  },
+  {
+    "tc": "TA-03",
+    "numero": 2,
+    "action": "Sélectionner le délégué, écrire un message et l’envoyer",
+    "attendu": "Le message apparaît dans la conversation",
+    "statut": "SUCCESS",
+    "capture": "ta03-2-message-envoye.png",
+    "observe": "Conforme au résultat attendu"
+  },
+  {
+    "tc": "TA-03",
+    "numero": 3,
+    "action": "Le délégué se connecte et ouvre la conversation",
+    "attendu": "Badge de notification sur la cloche ; message reçu de Youssef",
+    "statut": "SUCCESS",
+    "capture": "ta03-3-message-recu.png",
+    "observe": "Conforme au résultat attendu"
+  },
+  {
+    "tc": "TA-04",
+    "numero": 1,
+    "action": "Le délégué crée l’événement « Forum des clubs » (15/12/2026 10:00, Hall principal)",
+    "attendu": "L’événement apparaît dans la liste",
+    "statut": "SUCCESS",
+    "capture": "ta04-1-evenement-cree.png",
+    "observe": "Conforme au résultat attendu"
+  },
+  {
+    "tc": "TA-04",
+    "numero": 2,
+    "action": "Amira consulte la page Événements",
+    "attendu": "L’événement est visible ; aucun bouton de création pour l’étudiant",
+    "statut": "SUCCESS",
+    "capture": "ta04-2-evenement-etudiant.png",
+    "observe": "Conforme au résultat attendu"
+  },
+  {
+    "tc": "TA-05",
+    "numero": 1,
+    "action": "Cliquer sur l’icône lune dans l’en-tête",
+    "attendu": "L’interface passe en thème sombre",
+    "statut": "SUCCESS",
+    "capture": "ta05-1-theme-sombre.png",
+    "observe": "Conforme au résultat attendu"
+  },
+  {
+    "tc": "TA-05",
+    "numero": 2,
+    "action": "Recharger la page (F5)",
+    "attendu": "Le thème sombre est conservé",
+    "statut": "SUCCESS",
+    "capture": "ta05-2-theme-conserve.png",
+    "observe": "Conforme au résultat attendu"
+  }
+]

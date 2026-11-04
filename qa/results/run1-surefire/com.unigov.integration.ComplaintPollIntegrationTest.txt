@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: com.unigov.integration.ComplaintPollIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.894 s <<< FAILURE! -- in com.unigov.integration.ComplaintPollIntegrationTest
+com.unigov.integration.ComplaintPollIntegrationTest.priveeInaccessibleParId -- Time elapsed: 0.464 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<403> but was:<200>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$9(StatusResultMatchers.java:637)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.unigov.integration.ComplaintPollIntegrationTest.priveeInaccessibleParId(ComplaintPollIntegrationTest.java:51)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+

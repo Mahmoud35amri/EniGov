@@ -1,0 +1,110 @@
+
+C:\Users\ASUS\Desktop\EniGov\frontend\src\App.jsx
+  1:8  error  'React' is defined but never used  no-unused-vars
+
+C:\Users\ASUS\Desktop\EniGov\frontend\src\components\DashboardLayout.jsx
+  1:8  error  'React' is defined but never used  no-unused-vars
+
+C:\Users\ASUS\Desktop\EniGov\frontend\src\components\Header.jsx
+  1:8  error  'React' is defined but never used  no-unused-vars
+
+C:\Users\ASUS\Desktop\EniGov\frontend\src\components\Logo.jsx
+  1:8  error  'React' is defined but never used  no-unused-vars
+
+C:\Users\ASUS\Desktop\EniGov\frontend\src\components\Sidebar.jsx
+    1:8   error  'React' is defined but never used                                no-unused-vars
+  158:42  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\ASUS\Desktop\EniGov\frontend\src\context\AuthContext.jsx
+   1:8   error    'React' is defined but never used                                                                                               no-unused-vars
+   1:54  error    'useEffect' is defined but never used                                                                                           no-unused-vars
+  46:14  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\ASUS\Desktop\EniGov\frontend\src\context\ThemeContext.jsx
+   1:8   error    'React' is defined but never used                                                                                               no-unused-vars
+  29:14  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\ASUS\Desktop\EniGov\frontend\src\pages\AnnouncementsPage.jsx
+   1:8   error  'React' is defined but never used             no-unused-vars
+  32:35  error  'targetFilieres' is defined but never used    no-unused-vars
+  32:51  error  'targetPromotions' is defined but never used  no-unused-vars
+
+C:\Users\ASUS\Desktop\EniGov\frontend\src\pages\ComplaintsPage.jsx
+    1:8   error    'React' is defined but never used                                                                                   no-unused-vars
+   47:8   warning  React Hook useEffect has a missing dependency: 'fetchComplaints'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  266:35  error    'isOwner' is assigned a value but never used                                                                        no-unused-vars
+
+C:\Users\ASUS\Desktop\EniGov\frontend\src\pages\DecisionsPage.jsx
+    1:8   error  'React' is defined but never used  no-unused-vars
+  106:32  error  'id' is defined but never used     no-unused-vars
+
+C:\Users\ASUS\Desktop\EniGov\frontend\src\pages\DelegateDashboard.jsx
+  1:8  error  'React' is defined but never used  no-unused-vars
+
+C:\Users\ASUS\Desktop\EniGov\frontend\src\pages\EventsPage.jsx
+   19:5    error  'AlertCircle' is defined but never used                          no-unused-vars
+  170:113  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  218:48   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  414:20   error  Unknown property 'jsx' found                                     react/no-unknown-property
+
+C:\Users\ASUS\Desktop\EniGov\frontend\src\pages\ForgotPasswordPage.jsx
+   1:8   error  'React' is defined but never used                                no-unused-vars
+   3:25  error  'CheckCircle2' is defined but never used                         no-unused-vars
+  39:51  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\ASUS\Desktop\EniGov\frontend\src\pages\LandingPage.jsx
+    1:8    error  'React' is defined but never used                                no-unused-vars
+   12:5    error  'LogIn' is defined but never used                                no-unused-vars
+   13:5    error  'UserPlus' is defined but never used                             no-unused-vars
+  129:62   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  164:41   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  164:61   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  164:113  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  276:38   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  276:73   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  276:118  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  276:152  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  376:30   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  393:75   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  400:20   error  Unknown property 'jsx' found                                     react/no-unknown-property
+
+C:\Users\ASUS\Desktop\EniGov\frontend\src\pages\LoginPage.jsx
+    1:8   error  'React' is defined but never used                                no-unused-vars
+    4:10  error  'LogIn' is defined but never used                                no-unused-vars
+    4:17  error  'User' is defined but never used                                 no-unused-vars
+   92:51  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  159:30  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\ASUS\Desktop\EniGov\frontend\src\pages\MessagingPage.jsx
+   1:8  error    'React' is defined but never used                                                                                      no-unused-vars
+  33:8  warning  React Hook useEffect has a missing dependency: 'fetchConversations'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+C:\Users\ASUS\Desktop\EniGov\frontend\src\pages\PollsPage.jsx
+  1:8  error  'React' is defined but never used  no-unused-vars
+
+C:\Users\ASUS\Desktop\EniGov\frontend\src\pages\RegisterPage.jsx
+    1:8   error  'React' is defined but never used                                no-unused-vars
+    4:62  error  'CheckCircle2' is defined but never used                         no-unused-vars
+   90:51  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  254:40  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\ASUS\Desktop\EniGov\frontend\src\pages\RegulationsPage.jsx
+  1:8  error  'React' is defined but never used  no-unused-vars
+
+C:\Users\ASUS\Desktop\EniGov\frontend\src\pages\ResetPasswordPage.jsx
+  1:8  error  'React' is defined but never used  no-unused-vars
+
+C:\Users\ASUS\Desktop\EniGov\frontend\src\pages\SettingsPage.jsx
+  283:113  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\ASUS\Desktop\EniGov\frontend\src\pages\StudentHomePage.jsx
+  1:8  error  'React' is defined but never used  no-unused-vars
+
+C:\Users\ASUS\Desktop\EniGov\frontend\src\pages\StudentsPage.jsx
+  1:8  error  'React' is defined but never used  no-unused-vars
+
+C:\Users\ASUS\Desktop\EniGov\frontend\src\pages\VerifyEmailPage.jsx
+  1:8  error  'React' is defined but never used  no-unused-vars
+
+✖ 59 problems (55 errors, 4 warnings)
+
