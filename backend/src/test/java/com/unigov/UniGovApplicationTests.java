@@ -7,6 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @SpringBootTest
+@org.springframework.test.context.ActiveProfiles("test")
 class UniGovApplicationTests {
 
     @Autowired

@@ -16,6 +16,8 @@
     <description>Student Governance Platform Backend</description>
     <properties>
         <java.version>17</java.version>
+        <!-- Mockito/Byte Buddy needs this flag when tests run on a JDK newer than it officially supports (JDK 25) -->
+        <argLine>-Dnet.bytebuddy.experimental=true</argLine>
     </properties>
     <dependencies>
         <dependency>
@@ -108,6 +110,21 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
+            </plugin>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.14</version>
+                <executions>
+                    <execution>
+                        <goals><goal>prepare-agent</goal></goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>test</phase>
+                        <goals><goal>report</goal></goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
